@@ -259,6 +259,61 @@ export default function JointCenterPage() {
                       </ul>
                     </div>
                   </div>
+
+                  {/* 주요 수술 치료 분야 추가 */}
+                  <div style={{ marginTop: "50px", paddingTop: "40px", borderTop: "2px solid #f1f5f9" }}>
+                    <h3 style={{ fontSize: "1.4rem", fontWeight: 700, color: "hsl(193, 80%, 25%)", marginBottom: "20px", display: "flex", alignItems: "center", gap: "10px" }}>
+                      <i className="fa-solid fa-notes-medical" style={{ color: "hsl(38, 92%, 50%)" }}></i>
+                      굳쎈 주요 수술 치료 분야
+                    </h3>
+                    <div style={{ display: "grid", gap: "20px", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))" }}>
+                      
+                      {/* 수술 분야 1 */}
+                      <div style={{ backgroundColor: "var(--color-bg-warm, #FAF9F6)", padding: "24px", borderRadius: "12px", border: "1px dashed #cbd5e1" }}>
+                        <h4 style={{ fontSize: "1.1rem", fontWeight: 700, color: "hsl(193, 80%, 25%)", marginBottom: "10px", display: "flex", alignItems: "center", gap: "8px" }}>
+                          <span style={{ backgroundColor: "hsl(38, 92%, 50%)", color: "#ffffff", width: "24px", height: "24px", borderRadius: "50%", display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: "0.85rem", fontWeight: "bold" }}>1</span>
+                          골절 수술
+                        </h4>
+                        <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.92rem", lineHeight: "1.6", margin: 0 }}>
+                          척추골절, 관절골절, 사지 복합골절 등 긴급하고 정밀한 접합 치료가 필요한 뼈 손상 수술을 시행합니다.
+                        </p>
+                      </div>
+
+                      {/* 수술 분야 2 */}
+                      <div style={{ backgroundColor: "var(--color-bg-warm, #FAF9F6)", padding: "24px", borderRadius: "12px", border: "1px dashed #cbd5e1" }}>
+                        <h4 style={{ fontSize: "1.1rem", fontWeight: 700, color: "hsl(193, 80%, 25%)", marginBottom: "10px", display: "flex", alignItems: "center", gap: "8px" }}>
+                          <span style={{ backgroundColor: "hsl(38, 92%, 50%)", color: "#ffffff", width: "24px", height: "24px", borderRadius: "50%", display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: "0.85rem", fontWeight: "bold" }}>2</span>
+                          인공관절수술
+                        </h4>
+                        <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.92rem", lineHeight: "1.6", margin: 0 }}>
+                          고관절, 슬관절(무릎), 발목관절, 어깨관절 등 연골 소실 및 마모가 심한 관절을 정밀 치환하여 제 기능을 복구합니다.
+                        </p>
+                      </div>
+
+                      {/* 수술 분야 3 */}
+                      <div style={{ backgroundColor: "var(--color-bg-warm, #FAF9F6)", padding: "24px", borderRadius: "12px", border: "1px dashed #cbd5e1" }}>
+                        <h4 style={{ fontSize: "1.1rem", fontWeight: 700, color: "hsl(193, 80%, 25%)", marginBottom: "10px", display: "flex", alignItems: "center", gap: "8px" }}>
+                          <span style={{ backgroundColor: "hsl(38, 92%, 50%)", color: "#ffffff", width: "24px", height: "24px", borderRadius: "50%", display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: "0.85rem", fontWeight: "bold" }}>3</span>
+                          관절경 수술
+                        </h4>
+                        <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.92rem", lineHeight: "1.6", margin: 0 }}>
+                          척추 디스크/협착, 어깨 회전근개 파열, 오십견, 무릎 십자인대/연골판 파열, 발목 인대 파열 등을 최소 절개 카메라로 정교히 진단하고 수술합니다.
+                        </p>
+                      </div>
+
+                      {/* 수술 분야 4 */}
+                      <div style={{ backgroundColor: "var(--color-bg-warm, #FAF9F6)", padding: "24px", borderRadius: "12px", border: "1px dashed #cbd5e1" }}>
+                        <h4 style={{ fontSize: "1.1rem", fontWeight: 700, color: "hsl(193, 80%, 25%)", marginBottom: "10px", display: "flex", alignItems: "center", gap: "8px" }}>
+                          <span style={{ backgroundColor: "hsl(38, 92%, 50%)", color: "#ffffff", width: "24px", height: "24px", borderRadius: "50%", display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: "0.85rem", fontWeight: "bold" }}>4</span>
+                          교정술
+                        </h4>
+                        <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.92rem", lineHeight: "1.6", margin: 0 }}>
+                          휜 다리를 곧게 펴주는 오다리 교정(근위경골 절골술), 엄지발각 변형을 바로잡는 무지외반증 교정수술 등 골격을 곧게 정렬합니다.
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
                 </div>
               )}
 
