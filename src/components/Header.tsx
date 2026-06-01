@@ -46,12 +46,12 @@ export default function Header() {
                 </ul>
               </li>
               <li className="nav-item">
-                <a href="/#services" className="nav-link">굳쎈 내과검진센터</a>
+                <a href="/internal-med/endoscopy" className="nav-link">굳쎈 내과검진센터</a>
                 <ul className="submenu">
-                  <li><a href="/#services">위·대장내시경</a></li>
-                  <li><a href="/#services">5대 암검진</a></li>
-                  <li><a href="/#services">만성질환 관리</a></li>
-                  <li><a href="/#services">예방접종</a></li>
+                  <li><a href="/internal-med/endoscopy">위·대장내시경</a></li>
+                  <li><a href="/internal-med/cancer-screening">5대 암검진</a></li>
+                  <li><a href="/internal-med/chronic-disease">만성질환 관리</a></li>
+                  <li><a href="/internal-med/vaccination">예방접종</a></li>
                 </ul>
               </li>
               <li className="nav-item">
@@ -102,9 +102,10 @@ export default function Header() {
             <li>
               <span className="mobile-menu-title">굳쎈 내과검진센터</span>
               <ul className="mobile-submenu">
-                <li><a href="/#services" className="mobile-link" onClick={handleMobileLinkClick}>위대장내시경</a></li>
-                <li><a href="/#services" className="mobile-link" onClick={handleMobileLinkClick}>5대 암검진</a></li>
-                <li><a href="/#services" className="mobile-link" onClick={handleMobileLinkClick}>만성질환·예방접종</a></li>
+                <li><a href="/internal-med/endoscopy" className="mobile-link" onClick={handleMobileLinkClick}>위·대장내시경</a></li>
+                <li><a href="/internal-med/cancer-screening" className="mobile-link" onClick={handleMobileLinkClick}>5대 암검진</a></li>
+                <li><a href="/internal-med/chronic-disease" className="mobile-link" onClick={handleMobileLinkClick}>만성질환 관리</a></li>
+                <li><a href="/internal-med/vaccination" className="mobile-link" onClick={handleMobileLinkClick}>예방접종</a></li>
               </ul>
             </li>
             <li>
