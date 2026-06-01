@@ -38,7 +38,7 @@ export default function VaccinationClinic() {
               <div className="card-icon-wrapper">
                 <i className="fa-solid fa-virus-slash"></i>
               </div>
-              <h3 className="card-title">대상포진 백신 (최신 싱그릭스 백신 도입)</h3>
+              <h3 className="card-title">대상포진 백신<br />(최신 싱그릭스 백신 도입)</h3>
               <p className="card-text">
                 극심한 신경통을 유발하는 대상포진 예방을 위해 예방률이 97% 이상으로 매우 우수한 유전자 재조합 백신 '싱그릭스(Shingrix)'를 전면 도입하여 운용 중입니다.
               </p>
