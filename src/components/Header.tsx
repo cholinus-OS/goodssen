@@ -1,0 +1,130 @@
+"use client";
+
+import { useState } from "react";
+import ReservationModal from "./ReservationModal";
+
+export default function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleMobileLinkClick = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  return (
+    <>
+      <header className="main-header" id="mainHeader">
+        <div className="header-container">
+          {/* 로고 (클릭 시 홈으로 이동) */}
+          <a href="/" className="logo">
+            <span className="logo-bold">굳쎈</span>정형외과내과
+          </a>
+          
+          {/* 데스크톱 메뉴 */}
+          <nav className="nav-menu">
+            <ul className="nav-list">
+              <li className="nav-item">
+                <a href="/#about" className="nav-link">병원소개</a>
+                <ul className="submenu">
+                  <li><a href="/#about">인사말</a></li>
+                  <li><a href="/#doctors">의료진 소개</a></li>
+                  <li><a href="/#location">오시는 길</a></li>
+                </ul>
+              </li>
+              <li className="nav-item">
+                <a href="/joint-center/surgery" className="nav-link">굳쎈 척추관절센터</a>
+                <ul className="submenu">
+                  <li><a href="/joint-center/surgery">수술치료</a></li>
+                  <li><a href="/joint-center/injection">주사치료</a></li>
+                  <li><a href="/joint-center/manual">도수치료</a></li>
+                  <li><a href="/joint-center/eswt">체외충격파</a></li>
+                  <li><a href="/joint-center/non-surgical">비수술 통증치료</a></li>
+                </ul>
+              </li>
+              <li className="nav-item">
+                <a href="/#services" className="nav-link">굳쎈 내과검진센터</a>
+                <ul className="submenu">
+                  <li><a href="/#services">위·대장내시경</a></li>
+                  <li><a href="/#services">5대 암검진</a></li>
+                  <li><a href="/#services">만성질환 관리</a></li>
+                  <li><a href="/#services">예방접종</a></li>
+                </ul>
+              </li>
+              <li className="nav-item">
+                <a href="/#location" className="nav-link">병원소식</a>
+                <ul className="submenu">
+                  <li><a href="/#location">공지사항</a></li>
+                  <li><a href="/#location">건강정보</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          
+          {/* 모바일 토글 버튼 */}
+          <button 
+            className={`mobile-toggle-btn ${isMobileMenuOpen ? "active" : ""}`}
+            onClick={toggleMobileMenu}
+            aria-label="메뉴 토글"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      {/* 모바일 슬라이딩 네비게이션 오버레이 */}
+      <div className={`mobile-overlay ${isMobileMenuOpen ? "active" : ""}`}>
+        <div className="mobile-menu-content">
+          <ul className="mobile-nav-list">
+            <li>
+              <span className="mobile-menu-title">병원소개</span>
+              <ul className="mobile-submenu">
+                <li><a href="/#about" className="mobile-link" onClick={handleMobileLinkClick}>인사말</a></li>
+                <li><a href="/#doctors" className="mobile-link" onClick={handleMobileLinkClick}>의료진 소개</a></li>
+                <li><a href="/#location" className="mobile-link" onClick={handleMobileLinkClick}>오시는 길</a></li>
+              </ul>
+            </li>
+            <li>
+              <span className="mobile-menu-title">굳쎈 척추관절센터</span>
+              <ul className="mobile-submenu">
+                <li><a href="/joint-center/surgery" className="mobile-link" onClick={handleMobileLinkClick}>수술치료</a></li>
+                <li><a href="/joint-center/injection" className="mobile-link" onClick={handleMobileLinkClick}>주사치료</a></li>
+                <li><a href="/joint-center/manual" className="mobile-link" onClick={handleMobileLinkClick}>도수치료</a></li>
+                <li><a href="/joint-center/eswt" className="mobile-link" onClick={handleMobileLinkClick}>체외충격파</a></li>
+                <li><a href="/joint-center/non-surgical" className="mobile-link" onClick={handleMobileLinkClick}>비수술 통증치료</a></li>
+              </ul>
+            </li>
+            <li>
+              <span className="mobile-menu-title">굳쎈 내과검진센터</span>
+              <ul className="mobile-submenu">
+                <li><a href="/#services" className="mobile-link" onClick={handleMobileLinkClick}>위대장내시경</a></li>
+                <li><a href="/#services" className="mobile-link" onClick={handleMobileLinkClick}>5대 암검진</a></li>
+                <li><a href="/#services" className="mobile-link" onClick={handleMobileLinkClick}>만성질환·예방접종</a></li>
+              </ul>
+            </li>
+            <li>
+              <span className="mobile-menu-title">병원소식</span>
+              <ul className="mobile-submenu">
+                <li><a href="/#location" className="mobile-link" onClick={handleMobileLinkClick}>공지사항</a></li>
+                <li><a href="/#location" className="mobile-link" onClick={handleMobileLinkClick}>건강정보</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div className="mobile-cta-box">
+            <a href="#reservation" className="btn-cta-mobile" onClick={(e) => { setIsMobileMenuOpen(false); setIsModalOpen(true); e.preventDefault(); }}>
+              진료예약 및 전화상담 받기
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* 예약 신청 모달창 연동 */}
+      <ReservationModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+    </>
+  );
+}
