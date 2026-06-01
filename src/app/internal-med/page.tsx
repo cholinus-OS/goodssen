@@ -139,7 +139,7 @@ export default function InternalMedPage() {
                         padding: "15px 20px",
                         fontSize: "0.98rem",
                         fontWeight: isActive ? "700" : "500",
-                        color: isActive ? "#ffffff" : "hsl(210, 24%, 16%)",
+                        color: isActive ? "#ffffff" : "hsl(193, 80%, 25%)",
                         backgroundColor: isActive ? "hsl(193, 80%, 25%)" : "transparent",
                         borderLeft: isActive ? "5px solid hsl(38, 92%, 50%)" : "5px solid transparent",
                         borderRadius: "8px",
@@ -201,46 +201,60 @@ export default function InternalMedPage() {
                     소화기내과 세부전문의 원장이 올림푸스 최상급 내시경 장비로 미세한 조기 암세포나 용종을 직접 찾아내고 당일 즉시 안전하게 절제 처치합니다.
                   </p>
                   
-                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-user-doctor"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>소화기내시경 세부전문의 시술</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>소화기내시경 세부전문의 시술</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         대학병원 임상교수 출신의 검증된 실력을 가진 내과 전문의가 미세 병변도 놓치지 않고 꼼꼼히 체크합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
                         <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 세부 전문의 100% 직접 시술</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 용종 발견 시 당일 용종절제술 연동</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 발견 즉시 당일 용종절제 연계</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-hand-holding-medical"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>철저한 1회용 소독 지침 준수</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>철저한 1회용 소독 지침 준수</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         내시경학회 소독 가이드라인에 따른 화학 멸균 소독 및 모든 마우스피스와 주삿바늘의 철저한 일회용 사용을 약속합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
                         <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 초음파 자동 세척 및 멸균기 사용</li>
                         <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 1인 1대 소독 원칙 완벽 준수</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-gauge-high"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>CO2 가스 주입으로 복통 예방</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>CO2 가스 주입으로 복통 예방</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         대장 내시경 검사 시 일반 공기 대신 빠른 인체 배출 흡수가 되는 이산화탄소(CO2)를 공급하여 복부 팽만 고통을 획기적으로 방지합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 아프지 않고 가스가 잘 빠지는 수면내시경</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 검사 종료 후 신속한 기상과 일상 복귀</li>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 통증과 가스 팽만을 낮춘 내시경</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 검사 종료 후 신속한 기상과 복귀</li>
+                      </ul>
+                    </div>
+
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                      <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
+                        <i className="fa-solid fa-shield-virus"></i>
+                      </div>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>조직 검사 및 조기 암 선제 차단</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                        검사 중 발견된 미세 용종이나 이상 병변 부위에 대해 즉석에서 정밀 조직 검사를 수행하여 암으로 발전할 씨앗을 안전하게 선제 차단합니다.
+                      </p>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 즉각적인 병리 조직 검사 연계</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 암 전단계 병변 조기 관리</li>
                       </ul>
                     </div>
                   </div>
@@ -254,46 +268,60 @@ export default function InternalMedPage() {
                     국민건강보험공단 지정 종합 건강검진 의원으로서 우리나라 발병률이 가장 높은 위암, 대장암, 간암, 유방암, 자궁경부암을 정확히 판독합니다.
                   </p>
                   
-                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-apple-whole"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>소화기계 암 검진 (위/대장/간암)</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>소화기계 암 검진 (위/대장/간암)</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         정밀 소화기 내시경 검사 및 간암 유무 확인용 초음파, 혈액 종양표지자 검사를 병행해 소화기 악성 종양을 사전 진단합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
                         <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 간초음파 및 혈청 알파태아단백 검증</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 조기 종양 발견 특화 의료 장비 가동</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 조기 종양 발견 특화 의료 장비</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-person-breastfeeding"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>여성 2대 암 정밀 검진</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>여성 2대 암 정밀 검진</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         여성분들이 안심하고 쾌적하게 수진하실 수 있도록 분리된 독립 유방 촬영실 및 1회용 브러시를 이용한 무통 자궁 세포진 검사를 진행합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 여성 프라이버시 존중 독립 진료 환경</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 유방 압박 촬영 및 정밀 판독 시스템</li>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 여성 프라이버시 존중 독립 진료</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 유방 촬영 및 정밀 판독 시스템</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-clipboard-check"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>진료 당일 정밀 결과 피드백</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>진료 당일 정밀 결과 피드백</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         검진 결과를 단순히 우편으로만 통보하는 방식을 벗어나, 원장이 직접 중요 소견을 당일 조기에 상세 설명해 드립니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
                         <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 전문의 1:1 따뜻한 설명 진료</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 상급병원 신속 연계 의뢰 서비스 구축</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 대학병원 신속 연계 의뢰 서비스</li>
+                      </ul>
+                    </div>
+
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                      <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
+                        <i className="fa-solid fa-building-circle-check"></i>
+                      </div>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>국가 공단 지정 기관 안심 혜택</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                        국민건강보험공단이 지정한 공식 정식 검진 기관으로서, 대상 연령별 무료 혹은 본인부담 10%의 투명한 공단 범위 내에서 알맞게 진료 혜택을 지원합니다.
+                      </p>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 공단 규격 정식 건강검진 시행 의원</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 부담 없이 편안한 정밀 종합 검사</li>
                       </ul>
                     </div>
                   </div>
@@ -307,46 +335,60 @@ export default function InternalMedPage() {
                     혈관 내경을 손상시키고 각종 뇌심혈관 중증 합병증을 초래하는 당뇨, 고혈압, 고지혈증에 대해, 약물 및 일상 식습관 1:1 관리를 통해 안전하게 밀착 치료합니다.
                   </p>
                   
-                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-heart-pulse"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>고혈압 / 이상지질혈증 개별 케어</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>고혈압 / 이상지질혈증 개별 케어</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         환자 개인별 혈압 동향 분석과 동맥경화 진단 기기 연계 검사를 바탕으로 심혈관 손상 위험도를 조기 모니터링하여 투약 조절을 결정합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
                         <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 혈관 동맥경화 탄성 진단 연동</li>
                         <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 평생 든든한 맞춤 만성 혈압 제어</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-droplet"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>당뇨병 당화혈색소 신속 체크</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>당뇨병 당화혈색소 신속 체크</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         원내 정밀 간이 혈액분석기를 통해 당일 즉시 당화혈색소(3개월간 평균 혈당) 지표를 확인하여 인슐린 민감성을 튼튼히 조절합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
                         <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 당일 신속 혈액검사 결과 분석</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 당뇨병 만성 미세혈관 합병증 정밀 차단</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 당뇨 합병증 방어 관리</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-utensils"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>생활 패턴 맞춤 식단 및 운동 교정</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
-                        단순 약 처방 조율을 넘어 환자의 생활환경 안에서 소금 저나트륨 제한, 운동 시간 할애 가이드 등 실천 가능한 치료 방향을 상세 지도합니다.
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>식단 및 생활습관 맞춤 피드백</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                        약 처방에만 그치지 않고, 환자의 실제 생활환경 안에서 나트륨 제한 및 현실적으로 행동할 수 있는 조절 가이드라인을 매번 세심히 교육해 드립니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 1:1 환자의 눈높이에 맞춘 일상 건강 가이드</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 정감 가고 따뜻한 평생 주치의 동반 약속</li>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 1:1 식사 패턴 정성 케어</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 삶의 방식을 바꾸는 평생 관리</li>
+                      </ul>
+                    </div>
+
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                      <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
+                        <i className="fa-solid fa-stethoscope"></i>
+                      </div>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>안심 피검사 및 혈관 나이 측정</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                        정기적인 피검사 지표 모니터링과 경동맥 혈류 검사를 통하여 자칫 간과하기 쉬운 혈관 경직 합병증 리스크를 데이터에 근거해 사전 예방합니다.
+                      </p>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 경동맥 및 혈류 상태 정밀 판독</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 표적 장기 합병증 스크리닝</li>
                       </ul>
                     </div>
                   </div>
@@ -360,49 +402,63 @@ export default function InternalMedPage() {
                     성인 예방접종은 면역 체계를 활성화시켜 대상포진과 폐렴 등 중증 감염병으로부터 안전하게 생명과 활력을 지키는 최선의 방도입니다.
                   </p>
                   
-                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-virus-slash"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>
                         대상포진 백신<br />
                         <span style={{ fontSize: "0.95rem", color: "hsl(208, 12%, 46%)", fontWeight: "normal" }}>(최신 싱그릭스 백신 도입)</span>
                       </h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         예방 효율이 97% 이상으로 극대화된 유전자 재조합 신형 백신인 '싱그릭스(Shingrix)'를 원내 전면 배치하여 도입 시행 중입니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 만 50세 이상 및 고연령 성인 강력 접종 권장</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 총 2회 접종(2개월 간격)을 통한 최상의 면역벽 획득</li>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 만 50세 이상 및 고령 어르신 접종 권장</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 총 2회 접종(2개월 차) 안심 방어선 획득</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-shield-virus"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>폐렴구균 & 인플루엔자 독감 백신</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>폐렴구균 & 인플루엔자 독감 백신</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         감염 시 치명율이 높은 중증 호흡기 질환 예방용 폐렴 단백접합 백신 및 매년 정기 유행하는 4가 독감 접종을 안정적으로 수급 제공합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 성인 평생 1회 접종 폐렴 단백 접합 백신</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 독감 시즌 맞춤 원스톱 동시 접종 프로그램</li>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 성인 평생 1회 접종 폐렴구균 백신</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 원스톱 환절기 독감 안심 접종 프로그램</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-syringe"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>백신 콜드체인 정밀 모니터링</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>백신 콜드체인 정밀 모니터링</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         백신의 역가(유효도)를 철저히 보존하기 위해, 백신 전용 냉장 온도 제어 시스템을 항시 가동하여 정밀 온도 관리를 유지합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 자동 온도 이상 경보 센서 시스템 가동</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 접종 후 안정 상태를 유도하는 원내 15분 관찰 모니터링</li>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 온도 이상 방지 실시간 경보 시스템</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 접종 후 15분 대기 안심 원내 모니터링</li>
+                      </ul>
+                    </div>
+
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                      <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
+                        <i className="fa-solid fa-calendar-check"></i>
+                      </div>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>연령 및 면역 상태별 백신 스케줄</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                        환자의 기존 병력, 건강 패턴, 면역 상태 및 직업 등을 내과 전문의가 꼼꼼하게 평가하여 현재 가장 필요한 예방접종을 알맞게 설계합니다.
+                      </p>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 1:1 맞춤형 권장 예방백신 컨설팅</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 접종 후 평생 면역 이력 기록 지원</li>
                       </ul>
                     </div>
                   </div>
