@@ -36,22 +36,22 @@ export default function Header() {
                 </ul>
               </li>
               <li className="nav-item">
-                <a href="/joint-center/surgery" className="nav-link">굳쎈 척추관절센터</a>
+                <a href="/joint-center" className="nav-link">굳쎈 척추관절센터</a>
                 <ul className="submenu">
-                  <li><a href="/joint-center/surgery">수술치료</a></li>
-                  <li><a href="/joint-center/injection">주사치료</a></li>
-                  <li><a href="/joint-center/manual">도수치료</a></li>
-                  <li><a href="/joint-center/eswt">체외충격파</a></li>
-                  <li><a href="/joint-center/non-surgical">비수술 통증치료</a></li>
+                  <li><a href="/joint-center?tab=0">수술치료</a></li>
+                  <li><a href="/joint-center?tab=1">주사치료</a></li>
+                  <li><a href="/joint-center?tab=2">도수치료</a></li>
+                  <li><a href="/joint-center?tab=3">체외충격파</a></li>
+                  <li><a href="/joint-center?tab=4">비수술 통증치료</a></li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a href="/internal-med/endoscopy" className="nav-link">굳쎈 내과검진센터</a>
+                <a href="/internal-med" className="nav-link">굳쎈 내과검진센터</a>
                 <ul className="submenu">
-                  <li><a href="/internal-med/endoscopy">위·대장내시경</a></li>
-                  <li><a href="/internal-med/cancer-screening">5대 암검진</a></li>
-                  <li><a href="/internal-med/chronic-disease">만성질환 관리</a></li>
-                  <li><a href="/internal-med/vaccination">예방접종</a></li>
+                  <li><a href="/internal-med?tab=0">위·대장내시경</a></li>
+                  <li><a href="/internal-med?tab=1">5대 암검진</a></li>
+                  <li><a href="/internal-med?tab=2">만성질환 관리</a></li>
+                  <li><a href="/internal-med?tab=3">예방접종</a></li>
                 </ul>
               </li>
               <li className="nav-item">
@@ -94,20 +94,20 @@ export default function Header() {
             <li>
               <span className="mobile-menu-title">굳쎈 척추관절센터</span>
               <ul className="mobile-submenu">
-                <li><a href="/joint-center/surgery" className="mobile-link" onClick={handleMobileLinkClick}>수술치료</a></li>
-                <li><a href="/joint-center/injection" className="mobile-link" onClick={handleMobileLinkClick}>주사치료</a></li>
-                <li><a href="/joint-center/manual" className="mobile-link" onClick={handleMobileLinkClick}>도수치료</a></li>
-                <li><a href="/joint-center/eswt" className="mobile-link" onClick={handleMobileLinkClick}>체외충격파</a></li>
-                <li><a href="/joint-center/non-surgical" className="mobile-link" onClick={handleMobileLinkClick}>비수술 통증치료</a></li>
+                <li><a href="/joint-center?tab=0" className="mobile-link" onClick={handleMobileLinkClick}>수술치료</a></li>
+                <li><a href="/joint-center?tab=1" className="mobile-link" onClick={handleMobileLinkClick}>주사치료</a></li>
+                <li><a href="/joint-center?tab=2" className="mobile-link" onClick={handleMobileLinkClick}>도수치료</a></li>
+                <li><a href="/joint-center?tab=3" className="mobile-link" onClick={handleMobileLinkClick}>체외충격파</a></li>
+                <li><a href="/joint-center?tab=4" className="mobile-link" onClick={handleMobileLinkClick}>비수술 통증치료</a></li>
               </ul>
             </li>
             <li>
               <span className="mobile-menu-title">굳쎈 내과검진센터</span>
               <ul className="mobile-submenu">
-                <li><a href="/internal-med/endoscopy" className="mobile-link" onClick={handleMobileLinkClick}>위·대장내시경</a></li>
-                <li><a href="/internal-med/cancer-screening" className="mobile-link" onClick={handleMobileLinkClick}>5대 암검진</a></li>
-                <li><a href="/internal-med/chronic-disease" className="mobile-link" onClick={handleMobileLinkClick}>만성질환 관리</a></li>
-                <li><a href="/internal-med/vaccination" className="mobile-link" onClick={handleMobileLinkClick}>예방접종</a></li>
+                <li><a href="/internal-med?tab=0" className="mobile-link" onClick={handleMobileLinkClick}>위·대장내시경</a></li>
+                <li><a href="/internal-med?tab=1" className="mobile-link" onClick={handleMobileLinkClick}>5대 암검진</a></li>
+                <li><a href="/internal-med?tab=2" className="mobile-link" onClick={handleMobileLinkClick}>만성질환 관리</a></li>
+                <li><a href="/internal-med?tab=3" className="mobile-link" onClick={handleMobileLinkClick}>예방접종</a></li>
               </ul>
             </li>
             <li>
