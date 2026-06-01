@@ -107,12 +107,7 @@ export default function Home() {
             </ul>
           </nav>
           
-          {/* 우측 상담 바로가기 버튼 */}
-          <div className="header-cta">
-            <a href="#reservation" className="btn-cta-header" onClick={openModal}>
-              <i className="fa-solid fa-phone-volume"></i> 진료예약 및 전화상담
-            </a>
-          </div>
+          {/* 우측 상담 바로가기 버튼이 제거되었습니다 */}
           
           {/* 모바일 화면용 메뉴 열기 (햄버거 버튼) */}
           <button 
