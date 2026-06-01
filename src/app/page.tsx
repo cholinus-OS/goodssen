@@ -138,7 +138,7 @@ export default function Home() {
               <ul className="mobile-submenu">
                 <li><a href="#about" className="mobile-link" onClick={handleMobileLinkClick}>인사말</a></li>
                 <li><a href="#doctors" className="mobile-link" onClick={handleMobileLinkClick}>의료진 소개</a></li>
-                <li><a href="#location" class="mobile-link" onClick={handleMobileLinkClick}>오시는 길</a></li>
+                <li><a href="#location" className="mobile-link" onClick={handleMobileLinkClick}>오시는 길</a></li>
               </ul>
             </li>
             <li>
@@ -201,7 +201,7 @@ export default function Home() {
                 <span className="status-label"><i className="fa-solid fa-user-doctor"></i> 진료 과목</span>
                 <span className="status-val">정형외과 / 내과</span>
               </div>
-              <div class="status-item">
+              <div className="status-item">
                 <span className="status-label"><i className="fa-solid fa-clock"></i> 오늘 진료시간</span>
                 <span className="status-val">09:00 ~ 18:00</span>
                 <span className="status-sub-val">점심시간 13:00 ~ 14:00</span>
@@ -529,7 +529,7 @@ export default function Home() {
                 </div>
                 <div className="time-row closed">
                   <span className="day">일요일 · 공휴일</span>
-                  <span className="hours">휴진 (응급환자는 응급실로 내원)</span>
+                  <span className="hours">휴진</span>
                 </div>
               </div>
               <div className="time-callout">
