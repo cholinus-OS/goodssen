@@ -140,7 +140,7 @@ export default function JointCenterPage() {
                         padding: "15px 20px",
                         fontSize: "0.98rem",
                         fontWeight: isActive ? "700" : "500",
-                        color: isActive ? "#ffffff" : "hsl(210, 24%, 16%)",
+                        color: isActive ? "#ffffff" : "hsl(193, 80%, 25%)",
                         backgroundColor: isActive ? "hsl(193, 80%, 25%)" : "transparent",
                         borderLeft: isActive ? "5px solid hsl(38, 92%, 50%)" : "5px solid transparent",
                         borderRadius: "8px",
@@ -202,46 +202,60 @@ export default function JointCenterPage() {
                     풍부한 경험의 정형외과 전문의가 대학병원급 첨단 장비로 불필요한 과잉 수술 없이 가장 안전하고 확실한 근본적 수술 치료를 진행합니다.
                   </p>
                   
-                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-microscope"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>대학병원급 최소침습 절개 수술</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>대학병원급 최소침습 절개 수술</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         미세 현미경 및 관절 내시경 장비를 활용해 병변 부위만 정밀 절개하여 정상 조직의 손상을 최소화합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
                         <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 흉터 및 출혈 최소화</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 통증 감소 및 빠른 일상 복귀</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 통증 감소 및 빠른 복귀</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-user-shield"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>철저한 무균 수술실 환경</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>철저한 무균 수술실 환경</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         감염 방지용 헤파필터 공기정화 시스템이 장착된 무균 청정 수술실을 운영하여 환자의 안전을 최우선으로 확보합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
                         <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 실시간 공기 청정 필터링</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 철저한 멸균 및 소독 프로세스</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 철저한 멸균 소독 프로세스</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-heart-pulse"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>내과 협진을 통한 안전성 확보</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>내과 협진을 통한 안전성 확보</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         수술 전 기저질환이나 내과적 문제를 내과 전문의가 사전에 진단 및 조절하여 수술 중 발생할 리스크를 예방합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
                         <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 정형외과-내과 실시간 협진</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 개인별 맞춤형 수술 리스크 케어</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 개인별 맞춤 리스크 케어</li>
+                      </ul>
+                    </div>
+
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                      <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
+                        <i className="fa-solid fa-wheelchair-move"></i>
+                      </div>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>체계적인 1:1 맞춤 재활 연계</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                        수술 직후 통증 제어 단계부터 관절 가동성 회복, 주변 기립 근력 강화까지 전문 물리치료사가 밀착 스포츠 재활을 직접 연계 처방합니다.
+                      </p>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 일상 및 운동기능 조기 복귀</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 전담 치료사의 안전한 가이던스</li>
                       </ul>
                     </div>
                   </div>
@@ -255,46 +269,60 @@ export default function JointCenterPage() {
                     단순 진통 효과를 넘어 손상된 인대와 관절 세포의 재생을 원천적으로 돕고 뼈와 연골을 단단하게 고정시키는 정밀 주사 치료 프로그램입니다.
                   </p>
                   
-                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-crosshairs"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>C-Arm 및 초음파 정밀 주사</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>C-Arm 및 초음파 정밀 주사</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         실시간 영상 장비를 보며 통증의 정확한 원인 부위에 약물을 오차 없이 미세 조준하여 안전하게 투입합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
                         <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 약물 부작용 최소화</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 소량 약물로 극대화된 타격 효과</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 소량 약물로 정밀 타격 효과</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-shield-halved"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>프롤로 및 DNA 자가재생 주사</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>프롤로 및 DNA 자가재생 주사</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         약해진 인대와 건 관절 부위에 자극 물질을 투입해 스스로 자가 회복되는 섬유아세포 재생을 촉진합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
                         <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 연골 및 인대 조직 근본 회복</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 인체에 무해한 안심 성분 사용</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 인체 무해 입증 안전 성분</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-kit-medical"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>고령자도 안전한 비수술 케어</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>고령자도 안전한 비수술 케어</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         시술 시간 10분 내외로 별도 마취나 입원이 필요 없어 만성질환 환자나 어르신들도 부담 없이 접하실 수 있습니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 당일 즉시 일상생활 가능</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 부작용이 매우 낮은 높은 안전성</li>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 당일 즉시 일상 복귀</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 높은 안전성과 치료 효율</li>
+                      </ul>
+                    </div>
+
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                      <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
+                        <i className="fa-solid fa-bone"></i>
+                      </div>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>관절막 및 연골 윤활 케어</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                        퇴행성 연골의 조기 마모를 예방하고 마찰로 인한 염증을 제어하기 위해 관절 활액 성분의 보호 주사를 정교하게 도포합니다.
+                      </p>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 마찰 통증 해소 및 손상 지연</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 건강보험 혜택 적용 가능</li>
                       </ul>
                     </div>
                   </div>
@@ -308,46 +336,60 @@ export default function JointCenterPage() {
                     의사의 처방하에 전문 도수 치료사가 직접 손과 소도구를 활용하여 척추 골반의 불균형을 해결하고 뭉친 근막을 완화하는 통증 해소 솔루션입니다.
                   </p>
                   
-                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-hands-holding"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>숙련된 도수치료사 1:1 케어</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>숙련된 도수치료사 1:1 케어</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         해부학적 통찰이 뛰어난 전담 물리치료사가 환자의 상태에 따라 통증 디스크 관절 부위를 부드럽게 이완 및 정렬합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 1:1 환자 맞춤형 치료 진행</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 근육 불균형 재활 정비</li>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 1:1 전담 안전한 도수 도포</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 굳은 관절 유연성 정비</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-users-viewfinder"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>직장인·수험생 체형 정밀 분석</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>직장인·수험생 체형 정밀 분석</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         거북목, 일자목, 구부정한 라운드 숄더 및 골반 대칭 틀어짐으로 만성 피로와 결림을 겪는 분들을 위한 자세 분석 교정입니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 만성 골격 결림 근본 해결</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 체형 골격 불균형 회복</li>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 만성 피로 근골격 저림 해소</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 척추 정렬 불균형 집중 회복</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-shield-cat"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>주사 및 물리치료 병행 효과</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>주사 및 물리치료 병행 효과</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         원내의 정형외과 치료 프로그램과 도수를 정밀 병행 설계하여 치료 기간을 대폭 단축시키고 효과를 높입니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 굳어버린 운동 가동범위 신속 확장</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 원스톱 만성 통증 재활 시스템</li>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 가동 범위 즉시 확장 솔루션</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 비수술 원스톱 재활 케어</li>
+                      </ul>
+                    </div>
+
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                      <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
+                        <i className="fa-solid fa-person-running"></i>
+                      </div>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>바른 자세 및 자가 운동 지도</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                        병원 치료실 외부인 일상에서도 척추 균형이 안정적으로 유지되도록 1:1 홈 트레이닝 스트레칭 교육을 세심히 제공합니다.
+                      </p>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 척추 근력 장기 보호 솔루션</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 가정 내 바른 척추 환경 보강</li>
                       </ul>
                     </div>
                   </div>
@@ -361,46 +403,60 @@ export default function JointCenterPage() {
                     강력한 충격파 물리에너지를 만성 염증 환부에 집중 전달하여, 미세 혈류 공급을 유도하고 세포의 자연 치유 메커니즘을 깨우는 비수술 재생법입니다.
                   </p>
                   
-                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-wave-square"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>집중형 & 방사형 복합 장비 치료</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>집중형 & 방사형 복합 장비</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         관절 힘줄 심부용 집중형 장비와, 표면 근육 치료용 방사형 장비를 환자의 증상 부위에 알맞게 맞춤 혼합 시술합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 환부 맞춤 타격 프로그램 적용</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 족저근막염 및 엘보 만성 건염 치료</li>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 환부 맞춤 에너지 분산 제어</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 족저근막염 및 만성 엘보 타격</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-vial-virus"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>신속한 자가 세포 재생 촉진</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>신속한 자가 세포 재생 촉진</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         통증 신경 물질을 희석하고 혈관 재생을 촉진하여, 치유 속도가 현저히 느려진 만성 인대 힘줄 부위의 자가 치유를 도모합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 화학 약물이 없어 몸에 가해지는 부담 제로</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 만성 석회성 건염 분쇄 및 흡수 치료</li>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 약물 부담 없는 자가 면역 재생</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 힘줄 석회 분쇄 및 혈류 공급</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-heart-circle-check"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>안전한 비침습적 치료 진행</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>안전한 비침습적 치료 진행</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         절개나 주사가 일절 들어가지 않아 부작용 염려가 전혀 없으며, 환자의 실시간 피드백을 통해 충격 강도를 안전하게 제어합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 15분 내외의 짧은 입원 없는 치료</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 지속 시술 시에도 관절에 이상 없음</li>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 15분 내외 짧은 통원 케어</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 신체 기저질환 유무 상관없이 안전</li>
+                      </ul>
+                    </div>
+
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                      <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
+                        <i className="fa-solid fa-burst"></i>
+                      </div>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>만성 석회 분쇄 및 근막 유착 해소</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                        어깨 회전근개 등 힘줄 내에 딱딱히 뭉쳐 통증을 초래하는 만성 석회 조직을 부드럽고 잘게 부숴 흡수를 촉진하고 유착 근막을 풀며 가동력을 회복합니다.
+                      </p>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 석회성 건염 특화 에너지 제어</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 굳어버린 관절 정체 가동력 복구</li>
                       </ul>
                     </div>
                   </div>
@@ -414,46 +470,60 @@ export default function JointCenterPage() {
                     허리 및 목 디스크 협착증 환자의 척추 디스크 탈출이나 신경 압박 문제를 컴퓨터 정밀 투시하에 안전하게 해결하는 최첨단 비수술 통증 제어 클리닉입니다.
                   </p>
                   
-                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                  <div className="services-grid" style={{ display: "grid", gap: "25px", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-radiation"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>신경차단술 (C-Arm 유도) 및 FIMS</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>신경차단술 및 FIMS 통증 치료</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         실시간 컴퓨터 촬영 장비를 활용해 부종과 유착이 심해진 신경가지 부근에 염증을 강력 가라앉히는 치료제를 정밀 주입합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 만성 목/허리 협착 통증 완화</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 시술 시간 5~10분, 즉시 통증 경감</li>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 만성 요통 디스크 통증 완화</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 시술 시간 10분 내외 신속 제어</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-arrows-to-circle"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>신경유착박리술 및 물리적 해소</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>신경유착박리술 및 증식 케어</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         디스크 유착이 매우 심한 경우 꼬리뼈를 통해 진입하는 초미세 특수 카테터 관을 통해 염증 부위를 깨끗이 박리 세척해 냅니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 만성적인 다리 당김 저림 완벽 정비</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 국소 마취 시술로 안전 치료 보증</li>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 만성 다리 저림 유착 분리 해소</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 국소 마취 당일 퇴원 안전 시스템</li>
                       </ul>
                     </div>
 
-                    <div className="service-card" style={{ padding: "30px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-laptop-medical"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>체계적인 재활 운동 연동</h3>
-                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>체계적인 사후 재활 연계</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         비수술 시술로 통증과 급성 염증을 제거한 직후, 골격과 허리 기립근을 잡아주는 운동과 도수를 매칭하여 재발을 강력 방지합니다.
                       </p>
-                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.9rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 근육 강화와 유연성 재활 코스 구축</li>
-                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 만성 척추 건강 주치의 안심 보장</li>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 근육 강화와 유연성 복구 연계</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 평생 척추 건강 주치의 책임 진료</li>
+                      </ul>
+                    </div>
+
+                    <div className="service-card" style={{ padding: "25px", border: "1px solid #e2e8f0", borderRadius: "12px" }}>
+                      <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
+                        <i className="fa-solid fa-tv"></i>
+                      </div>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>고정밀 C-Arm 실시간 영상 추적</h3>
+                      <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                        1mm 미만의 신경 가지까지 선명히 식별하는 정밀 모니터 스크린을 보며 통증이 심한 환부에 치료제를 정밀 주입하여 주변 혈관 손상 없이 안전하게 시술합니다.
+                      </p>
+                      <ul style={{ paddingLeft: "0", listStyle: "none", fontSize: "0.85rem", color: "hsl(210, 24%, 16%)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 오차 없는 정밀 타격 시술 실현</li>
+                        <li><i className="fa-solid fa-check" style={{ color: "hsl(38, 92%, 50%)", marginRight: "8px" }}></i> 대학병원급 C-Arm 실시간 모니터링</li>
                       </ul>
                     </div>
                   </div>
