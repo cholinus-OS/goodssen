@@ -55,10 +55,12 @@ export default function Header() {
                 </ul>
               </li>
               <li className="nav-item">
-                <a href="/#location" className="nav-link">병원소식</a>
+                <a href="/notice" className="nav-link">공지사항</a>
                 <ul className="submenu">
-                  <li><a href="/#location">공지사항</a></li>
-                  <li><a href="/#location">건강정보</a></li>
+                  <li><a href="/notice?tab=0">개인정보 취급방침</a></li>
+                  <li><a href="/notice?tab=1">이용약관</a></li>
+                  <li><a href="/notice?tab=2">이메일 무단수집 거부</a></li>
+                  <li><a href="/notice?tab=3">비급여 진료비 조회</a></li>
                 </ul>
               </li>
             </ul>
@@ -109,10 +111,12 @@ export default function Header() {
               </ul>
             </li>
             <li>
-              <span className="mobile-menu-title">병원소식</span>
+              <span className="mobile-menu-title">공지사항</span>
               <ul className="mobile-submenu">
-                <li><a href="/#location" className="mobile-link" onClick={handleMobileLinkClick}>공지사항</a></li>
-                <li><a href="/#location" className="mobile-link" onClick={handleMobileLinkClick}>건강정보</a></li>
+                <li><a href="/notice?tab=0" className="mobile-link" onClick={handleMobileLinkClick}>개인정보 취급방침</a></li>
+                <li><a href="/notice?tab=1" className="mobile-link" onClick={handleMobileLinkClick}>이용약관</a></li>
+                <li><a href="/notice?tab=2" className="mobile-link" onClick={handleMobileLinkClick}>이메일 무단수집 거부</a></li>
+                <li><a href="/notice?tab=3" className="mobile-link" onClick={handleMobileLinkClick}>비급여 진료비 조회</a></li>
               </ul>
             </li>
           </ul>
