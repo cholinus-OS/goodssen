@@ -736,6 +736,15 @@ button {
     gap: 15px;
     font-size: 1rem;
     font-weight: 600;
+    flex-shrink: 0; /* 좌우 찌러짐 방지 */
+}
+
+.doctor-photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 .doctor-photo-placeholder i {

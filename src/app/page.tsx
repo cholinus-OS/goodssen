@@ -204,7 +204,9 @@ export default function Home() {
                 <div className="doctors-row">
                   {/* 정형외과 1 */}
                   <div className="doctor-profile-card">
-                    <img src="/dr_kiwoong.jpg" alt="정기웅 대표원장" className="doctor-photo" />
+                    <div className="doctor-photo-placeholder">
+                      <img src="/dr_kiwoong.jpg" alt="정기웅 대표원장" />
+                    </div>
                     <div className="doctor-info">
                       <span className="doc-position">대표원장 / 정형외과 전문의</span>
                       <h3 className="doc-name">정기웅 대표원장</h3>
@@ -234,7 +236,9 @@ export default function Home() {
                   
                   {/* 정형외과 2 */}
                   <div className="doctor-profile-card">
-                    <img src="/dr_hyeongjun.jpg" alt="조형준 원장" className="doctor-photo" />
+                    <div className="doctor-photo-placeholder">
+                      <img src="/dr_hyeongjun.jpg" alt="조형준 원장" />
+                    </div>
                     <div className="doctor-info">
                       <span className="doc-position">원장 / 정형외과 전문의</span>
                       <h3 className="doc-name">조형준 원장</h3>
