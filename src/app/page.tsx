@@ -280,9 +280,8 @@ export default function Home() {
               <div className="tab-content active">
                 <div className="doctors-row single-doctor">
                   <div className="doctor-profile-card">
-                    <div className="doctor-photo-placeholder internal-bg">
-                      <i className="fa-solid fa-user-doctor"></i>
-                      <span>내과 전문의</span>
+                    <div className="doctor-photo-placeholder">
+                      <img src="/dr_hyejin.jpg" alt="기혜진 원장" />
                     </div>
                     <div className="doctor-info">
                       <span className="doc-position">원장 / 소화기내과 전문의</span>
