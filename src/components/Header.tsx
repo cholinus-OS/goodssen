@@ -20,8 +20,8 @@ export default function Header() {
       <header className="main-header" id="mainHeader">
         <div className="header-container">
           {/* 로고 (클릭 시 홈으로 이동) */}
-          <a href="/" className="logo">
-            <span className="logo-bold">굳쎈</span>정형외과내과
+          <a href="/" className="logo-img-wrapper">
+            <img src="/logo.png" alt="굳쎈정형외과내과 로고" className="header-logo" />
           </a>
           
           {/* 데스크톱 메뉴 */}
