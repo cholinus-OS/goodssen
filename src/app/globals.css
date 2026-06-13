@@ -732,7 +732,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* 상단 정렬로 변경 */
     gap: 15px;
     font-size: 1rem;
     font-weight: 600;
@@ -743,7 +743,7 @@ button {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    object-position: center;
+    object-position: top; /* 이미지 상단 정렬 */
     display: block;
 }
 
@@ -755,11 +755,13 @@ button {
 .doctor-photo-placeholder.accent-bg {
     background: #f8fafc;
     color: var(--color-accent-dark);
+    justify-content: center; /* 아이콘은 중앙 정렬 유지 */
 }
 
 .doctor-photo-placeholder.internal-bg {
     background: #f8fafc;
     color: hsl(150, 80%, 25%);
+    justify-content: center; /* 아이콘은 중앙 정렬 유지 */
 }
 
 .doctor-info {
