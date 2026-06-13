@@ -297,6 +297,9 @@ export default function Home() {
                           <li>경희대학교 의과전문대학원 졸업</li>
                           <li>경희의료원 내과 전공의 수료</li>
                           <li>강동경희대병원 소화기 내과 진료교수</li>
+                        </ul>
+                        <h4 style={{ marginTop: "15px" }}>학회</h4>
+                        <ul>
                           <li>대한 내과학회 평생회원</li>
                           <li>대한 소화기내시경학회 평생회원</li>
                           <li>대한 임상초음파학회 평생회원</li>
