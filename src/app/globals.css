@@ -727,7 +727,7 @@ button {
 .doctor-photo-placeholder {
     width: 220px;
     min-height: 280px;
-    background: linear-gradient(180deg, hsl(193, 30%, 85%) 0%, hsl(193, 30%, 75%) 100%);
+    background: #f8fafc;
     color: var(--color-primary);
     display: flex;
     flex-direction: column;
@@ -736,13 +736,13 @@ button {
     gap: 15px;
     font-size: 1rem;
     font-weight: 600;
-    flex-shrink: 0; /* 좌우 찌러짐 방지 */
+    flex-shrink: 0; /* 좌우 찌그러짐 방지 */
 }
 
 .doctor-photo-placeholder img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     display: block;
 }
@@ -753,12 +753,12 @@ button {
 
 /* 내과 및 보조 의료진을 위한 개별 썸네일 색상 분리 */
 .doctor-photo-placeholder.accent-bg {
-    background: linear-gradient(180deg, hsl(38, 50%, 85%) 0%, hsl(38, 50%, 75%) 100%);
+    background: #f8fafc;
     color: var(--color-accent-dark);
 }
 
 .doctor-photo-placeholder.internal-bg {
-    background: linear-gradient(180deg, hsl(150, 20%, 85%) 0%, hsl(150, 20%, 75%) 100%);
+    background: #f8fafc;
     color: hsl(150, 80%, 25%);
 }
 
