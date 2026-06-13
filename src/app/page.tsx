@@ -210,16 +210,26 @@ export default function Home() {
                     </div>
                     <div className="doctor-info">
                       <span className="doc-position">대표원장 / 정형외과 전문의</span>
-                      <h3 className="doc-name">김굳쎈 대표원장</h3>
+                      <h3 className="doc-name">정기웅 대표원장</h3>
                       <p className="doc-philosophy">"환자의 통증 없는 편안한 일상으로의 복귀가 저의 가장 큰 기쁨입니다."</p>
                       <div className="doc-history">
                         <h4>약력 및 학력</h4>
                         <ul>
-                          <li>서울대학교 의과대학 및 동 대학원 졸업</li>
-                          <li>서울대학교병원 정형외과 전공의 수료</li>
-                          <li>서울대학교병원 정형외과 임상강사/진료교수</li>
-                          <li>대한정형외과학회 정회원</li>
-                          <li>대한스포츠의학회 분과전문의</li>
+                          <li>경희대학교 의과대학 졸업</li>
+                          <li>경희의료원 정형외과 레지던트 수료</li>
+                          <li>경희대학교 의과대학 외래교수</li>
+                          <li>여수애양재활병원 공중보건의사</li>
+                          <li>서울성심병원 척추센터 정형외과 과장</li>
+                          <li>대한 정형외과학회 정회원</li>
+                          <li>대한 척추외과학회 정회원</li>
+                          <li>대한 골절학회 정회원</li>
+                          <li>대한 슬관절학회 정회원</li>
+                          <li>대한 관절경학회 정회원</li>
+                          <li>대한 성장학회 정회원</li>
+                          <li>대한 정형통증의학회 정회원</li>
+                          <li>대한 정형통증의학회 학술이사</li>
+                          <li>대한 정형외과의사회 상임이사</li>
+                          <li>대한척추외과학회 척추통증연구회 위원</li>
                         </ul>
                       </div>
                     </div>
@@ -233,16 +243,21 @@ export default function Home() {
                     </div>
                     <div className="doctor-info">
                       <span className="doc-position">원장 / 정형외과 전문의</span>
-                      <h3 className="doc-name">이관절 원장</h3>
+                      <h3 className="doc-name">조형준 원장</h3>
                       <p className="doc-philosophy">"아픈 부위의 정밀한 주사 및 도수 비수술 재생 치료를 연구하고 약속합니다."</p>
                       <div className="doc-history">
                         <h4>약력 및 학력</h4>
                         <ul>
-                          <li>연세대학교 의과대학 졸업</li>
-                          <li>세브란스병원 정형외과 전공의 수료</li>
-                          <li>대한견주관절(어깨·팔꿈치)학회 평생회원</li>
-                          <li>대한척추외과학회 정회원</li>
-                          <li>전) 서울베스트병원 관절센터 원장</li>
+                          <li>경희대학교 의과대학 졸업</li>
+                          <li>경희의료원 정형외과 레지던트 수료</li>
+                          <li>경희의료원 정형외과 슬관절외과 전임의</li>
+                          <li>경희의료원 정형외과학 석사</li>
+                          <li>경희의료원 정형외과학 박사</li>
+                          <li>전) 영등포 안세병원 정형외과 의무원장</li>
+                          <li>전) 서울예스병원 정형외과 원장</li>
+                          <li>전) 조형준 정형외과의원 원장</li>
+                          <li>전) 청담이룸병원 대표원장</li>
+                          <li>전) 서울척병원 의정부 정형외과 원장</li>
                         </ul>
                       </div>
                     </div>
@@ -262,16 +277,23 @@ export default function Home() {
                     </div>
                     <div className="doctor-info">
                       <span className="doc-position">원장 / 소화기내과 전문의</span>
-                      <h3 className="doc-name">박내과 원장</h3>
+                      <h3 className="doc-name">기혜진 원장</h3>
                       <p className="doc-philosophy">"정밀한 위·대장 내시경 검사를 통해 숨겨진 질환을 찾아 조기에 치료하겠습니다."</p>
                       <div className="doc-history">
                         <h4>약력 및 학력</h4>
                         <ul>
-                          <li>가톨릭대학교 의과대학 졸업</li>
-                          <li>서울성모병원 내과 전공의 수료</li>
-                          <li>대한소화기내시경학회 세부전문의</li>
-                          <li>대한임상초음파학회 인정의</li>
-                          <li>대한당뇨병학회 및 고혈압학회 회원</li>
+                          <li>경희대학교 의과전문대학원 졸업</li>
+                          <li>경희의료원 내과 전공의 수료</li>
+                          <li>강동경희대병원 소화기 내과 진료교수</li>
+                          <li>대한 내과학회 평생회원</li>
+                          <li>대한 소화기내시경학회 평생회원</li>
+                          <li>대한 임상초음파학회 평생회원</li>
+                          <li>대한 소화기학회 정회원</li>
+                          <li>대한 고혈압학회 정회원</li>
+                          <li>대한 당뇨병학회 정회원</li>
+                          <li>대한 비만학회 정회원</li>
+                          <li>대한 항노화학회 정회원</li>
+                          <li>대한 소아알레르기호흡기학회 정회원</li>
                         </ul>
                       </div>
                     </div>

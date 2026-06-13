@@ -33,7 +33,7 @@ export default function Footer() {
         <div className="footer-container">
           <p className="copyright">© 2026 굳쎈정형외과내과의원. All Rights Reserved. Designed for premium care.</p>
           <div className="footer-address">
-            상호명: 굳쎈정형외과내과의원 | 대표자: 김굳쎈 | 주소: 서울 노원구 동일로 1673 (신한은행 건물 4층) | 사업자등록번호: 123-45-67890
+            상호명: 굳쎈정형외과내과의원 | 대표자: 정기웅 | 주소: 서울 노원구 동일로 1673 (신한은행 건물 4층) | 사업자등록번호: 123-45-67890
           </div>
         </div>
       </div>
