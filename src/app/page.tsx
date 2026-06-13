@@ -70,6 +70,21 @@ export default function Home() {
             {/* 카드 1 */}
             <div className="service-card">
               <div className="card-icon-wrapper">
+                <i className="fa-solid fa-kit-medical"></i>
+              </div>
+              <h3 className="card-title">정확한 수술적 치료</h3>
+              <p className="card-text">
+                척추·관절 질환에 대하여 첨단 관절경을 이용한 최소침습 수술 및 골절 수술, 그리고 안전한 내고정물 제거수술을 정밀하고 신속하게 시행합니다.
+              </p>
+              <ul className="card-features">
+                <li><i className="fa-solid fa-check"></i> 관절경 최소침습 척추·관절 수술</li>
+                <li><i className="fa-solid fa-check"></i> 정밀한 골절 수술 및 내고정물 제거</li>
+              </ul>
+            </div>
+
+            {/* 카드 2 */}
+            <div className="service-card">
+              <div className="card-icon-wrapper">
                 <i className="fa-solid fa-bone"></i>
               </div>
               <h3 className="card-title">수험생/직장인 맞춤 도수치료</h3>
@@ -82,7 +97,7 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* 카드 2 */}
+            {/* 카드 3 */}
             <div className="service-card">
               <div className="card-icon-wrapper">
                 <i className="fa-solid fa-person-running"></i>
@@ -97,7 +112,7 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* 카드 3 */}
+            {/* 카드 4 */}
             <div className="service-card">
               <div className="card-icon-wrapper">
                 <i className="fa-solid fa-hospital-user"></i>
@@ -109,21 +124,6 @@ export default function Home() {
               <ul className="card-features">
                 <li><i className="fa-solid fa-check"></i> 철저한 1회용 소독 원칙 준수</li>
                 <li><i className="fa-solid fa-check"></i> 검사와 용종 절제를 당일에 논스톱 해결</li>
-              </ul>
-            </div>
-
-            {/* 카드 4 */}
-            <div className="service-card">
-              <div className="card-icon-wrapper">
-                <i className="fa-solid fa-kit-medical"></i>
-              </div>
-              <h3 className="card-title">정확한 수술적 치료</h3>
-              <p className="card-text">
-                척추·관절 질환에 대하여 첨단 관절경을 이용한 최소침습 수술 및 골절 수술, 그리고 안전한 내고정물 제거수술을 정밀하고 신속하게 시행합니다.
-              </p>
-              <ul className="card-features">
-                <li><i className="fa-solid fa-check"></i> 관절경 최소침습 척추·관절 수술</li>
-                <li><i className="fa-solid fa-check"></i> 정밀한 골절 수술 및 내고정물 제거</li>
               </ul>
             </div>
           </div>
