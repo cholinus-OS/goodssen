@@ -149,6 +149,7 @@ button {
     align-items: center;
     height: 100%;
     text-decoration: none;
+    gap: 10px;
 }
 
 .header-logo {
@@ -158,8 +159,40 @@ button {
     transition: transform 0.2s ease;
 }
 
+.logo-text {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
 .logo-img-wrapper:hover .header-logo {
-    transform: scale(1.02); /* 마우스 올렸을 때 미세하게 커지는 고급스러운 모션 */
+    transform: scale(1.02);
+}
+
+.logo-img-wrapper:hover .logo-text {
+    color: var(--color-accent-dark);
+}
+
+/* 로고 및 텍스트 모바일 반응형 */
+@media (max-width: 768px) {
+    .logo-text {
+        font-size: 1.15rem;
+    }
+    .header-logo {
+        height: 44px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 1.05rem;
+    }
+    .header-logo {
+        height: 38px;
+    }
 }
 
 /* 네비게이션 메뉴 목록 */

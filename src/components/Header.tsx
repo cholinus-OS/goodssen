@@ -22,6 +22,7 @@ export default function Header() {
           {/* 로고 (클릭 시 홈으로 이동) */}
           <a href="/" className="logo-img-wrapper">
             <img src="/logo.png" alt="굳쎈정형외과내과 로고" className="header-logo" />
+            <span className="logo-text">굳쎈 정형외과 내과 의원</span>
           </a>
           
           {/* 데스크톱 메뉴 */}
