@@ -204,10 +204,7 @@ export default function Home() {
                 <div className="doctors-row">
                   {/* 정형외과 1 */}
                   <div className="doctor-profile-card">
-                    <div className="doctor-photo-placeholder">
-                      <i className="fa-solid fa-user-doctor"></i>
-                      <span>정형외과 전문의</span>
-                    </div>
+                    <img src="/dr_kiwoong.jpg" alt="정기웅 대표원장" className="doctor-photo" />
                     <div className="doctor-info">
                       <span className="doc-position">대표원장 / 정형외과 전문의</span>
                       <h3 className="doc-name">정기웅 대표원장</h3>
