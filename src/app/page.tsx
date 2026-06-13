@@ -234,10 +234,7 @@ export default function Home() {
                   
                   {/* 정형외과 2 */}
                   <div className="doctor-profile-card">
-                    <div className="doctor-photo-placeholder accent-bg">
-                      <i className="fa-solid fa-user-doctor"></i>
-                      <span>정형외과 전문의</span>
-                    </div>
+                    <img src="/dr_hyeongjun.jpg" alt="조형준 원장" className="doctor-photo" />
                     <div className="doctor-info">
                       <span className="doc-position">원장 / 정형외과 전문의</span>
                       <h3 className="doc-name">조형준 원장</h3>
