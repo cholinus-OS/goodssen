@@ -219,6 +219,9 @@ export default function Home() {
                           <li>경희대학교 의과대학 외래교수</li>
                           <li>여수애양재활병원 공중보건의사</li>
                           <li>서울성심병원 척추센터 정형외과 과장</li>
+                        </ul>
+                        <h4 style={{ marginTop: "15px" }}>학회</h4>
+                        <ul>
                           <li>대한 정형외과학회 정회원</li>
                           <li>대한 척추외과학회 정회원</li>
                           <li>대한 골절학회 정회원</li>
