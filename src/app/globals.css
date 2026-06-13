@@ -1209,3 +1209,118 @@ button {
         min-height: 200px;
     }
 }
+
+/* --------------------------------------------------------
+   [8. 블로그 소개 섹션 스타일]
+   -------------------------------------------------------- */
+.blog-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.blog-card {
+    background: #f8fafc;
+    border-radius: var(--border-radius-lg);
+    border: 1px solid rgba(10, 77, 104, 0.05);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-premium);
+}
+
+.blog-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.blog-badge {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.blog-badge.naver {
+    background-color: #2db400;
+    color: #ffffff;
+}
+
+.blog-badge.website {
+    background-color: var(--color-primary);
+    color: #ffffff;
+}
+
+.blog-author {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-accent-dark);
+}
+
+.blog-card-body {
+    flex-grow: 1;
+    margin-bottom: 25px;
+}
+
+.blog-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.blog-card-desc {
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
+
+.blog-card-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: 15px;
+}
+
+.btn-blog-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.btn-blog-link:hover {
+    color: var(--color-accent-dark);
+}
+
+/* 모바일 반응형 처리 */
+@media (max-width: 992px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .blog-section {
+        padding: 60px 0;
+    }
+}

@@ -63,6 +63,9 @@ export default function Header() {
                   <li><a href="/notice?tab=3">비급여 진료비 조회</a></li>
                 </ul>
               </li>
+              <li className="nav-item">
+                <a href="/#blog" className="nav-link">블로그</a>
+              </li>
             </ul>
           </nav>
           
@@ -118,6 +121,9 @@ export default function Header() {
                 <li><a href="/notice?tab=2" className="mobile-link" onClick={handleMobileLinkClick}>이메일 무단수집 거부</a></li>
                 <li><a href="/notice?tab=3" className="mobile-link" onClick={handleMobileLinkClick}>비급여 진료비 조회</a></li>
               </ul>
+            </li>
+            <li>
+              <a href="/#blog" className="mobile-menu-title mobile-link" onClick={handleMobileLinkClick}>블로그</a>
             </li>
           </ul>
           <div className="mobile-cta-box">

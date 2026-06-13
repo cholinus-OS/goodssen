@@ -315,6 +315,84 @@ export default function Home() {
       </section>
 
       {/* --------------------------------------------------------
+         [8. 블로그 소개 섹션]
+         -------------------------------------------------------- */}
+      <section className="blog-section" id="blog">
+        <div className="section-container">
+          <div className="section-header">
+            <h2 className="section-title">원장님 개인 블로그</h2>
+            <div className="section-line"></div>
+            <p className="section-desc">굳쎈 의료진이 직접 건강 정보를 전달하고 소통하는 개인 블로그입니다.</p>
+          </div>
+          
+          <div className="blog-grid">
+            {/* 블로그 1: 정기웅 대표원장 네이버 블로그 */}
+            <div className="blog-card">
+              <div>
+                <div className="blog-card-header">
+                  <span className="blog-badge naver"><i className="fa-solid fa-square-n"></i> 블로그</span>
+                  <span className="blog-author">정기웅 대표원장</span>
+                </div>
+                <div className="blog-card-body">
+                  <h3 className="blog-card-title">굳쎈 척추·관절 이야기</h3>
+                  <p className="blog-card-desc">
+                    경희대학교 의과대학 정형외과 외래교수 정기웅 원장의 블로그입니다. 오랜 임상 경험을 토대로 디스크, 오십견, 관절염 등 척추·관절의 올바른 자가 치료 및 수술/비수술적 의학 상식을 쉽게 전해 드립니다.
+                  </p>
+                </div>
+              </div>
+              <div className="blog-card-footer">
+                <a href="https://m.blog.naver.com/narssen0?tab=1" target="_blank" rel="noopener noreferrer" className="btn-blog-link">
+                  블로그 방문하기 <i className="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* 블로그 2: 조형준 원장 네이버 블로그 */}
+            <div className="blog-card">
+              <div>
+                <div className="blog-card-header">
+                  <span className="blog-badge naver"><i className="fa-solid fa-square-n"></i> 블로그</span>
+                  <span className="blog-author">조형준 원장</span>
+                </div>
+                <div className="blog-card-body">
+                  <h3 className="blog-card-title">조형준 원장의 정형외과 이야기</h3>
+                  <p className="blog-card-desc">
+                    어깨, 무릎, 고관절 질환에 관한 비수술 재생 통증 치료 및 도수 치료 지식을 공유합니다. 환자분들과 더 가까이 소통하고 의학 정보를 친근하게 전하는 소통 공간입니다.
+                  </p>
+                </div>
+              </div>
+              <div className="blog-card-footer">
+                <a href="https://blog.naver.com/cholinus" target="_blank" rel="noopener noreferrer" className="btn-blog-link">
+                  블로그 방문하기 <i className="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* 블로그 3: 조형준 원장 건강 전문 사이트 */}
+            <div className="blog-card">
+              <div>
+                <div className="blog-card-header">
+                  <span className="blog-badge website"><i className="fa-solid fa-globe"></i> 공식 웹사이트</span>
+                  <span className="blog-author">조형준 원장</span>
+                </div>
+                <div className="blog-card-body">
+                  <h3 className="blog-card-title">Exercise is Medicine (운동이 약이다)</h3>
+                  <p className="blog-card-desc">
+                    단순 통증 완화를 넘어 우리 몸 고유의 기능을 회복할 수 있는 과학적 운동 방법과 생활 습관 의학 정보를 공유합니다. 올바른 움직임으로 건강을 지키는 든든한 가이드입니다.
+                  </p>
+                </div>
+              </div>
+              <div className="blog-card-footer">
+                <a href="https://cholinus-exerciseismedicine.com/" target="_blank" rel="noopener noreferrer" className="btn-blog-link">
+                  사이트 방문하기 <i className="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --------------------------------------------------------
          [7. 오시는 길 및 진료시간 안내 섹션]
          -------------------------------------------------------- */}
       <section className="location-section" id="location">
