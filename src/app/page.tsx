@@ -154,7 +154,7 @@ export default function Home() {
               <div className="trust-number">02</div>
               <h3 className="trust-title">대학병원급 최신 첨단 장비</h3>
               <p className="trust-text">
-                정밀하고 오차 없는 진단을 위해 대학병원급 최첨단 MRI, 고해상도 초음파 진단기, 디지털 X-ray, 최상급 올림푸스 내시경 시스템 장비를 아낌없이 도입하여 운용 중입니다.
+                정밀하고 오차 없는 진단을 위해 대학병원급 고해상도 초음파 진단기, 디지털 X-ray, 컴퓨터 단층촬영 CT, 골밀도검사 장비, 최신 관절경 수술 시스템 장비, 올림푸스 내시경 시스템 장비를 아낌없이 도입하여 운용 중입니다.
               </p>
             </div>
 
