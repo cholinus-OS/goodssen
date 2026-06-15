@@ -294,21 +294,30 @@ export default function Home() {
                       <div className="doc-history">
                         <h4>약력 및 학력</h4>
                         <ul>
-                          <li>경희대학교 의과전문대학원 졸업</li>
-                          <li>경희의료원 내과 전공의 수료</li>
-                          <li>강동경희대병원 소화기 내과 진료교수</li>
+                          <li>경희의료원 내과 전문의</li>
+                          <li>경희대학교 의과대학 외래교수</li>
+                          <li>강동경희대학교 소화기내과 진료교수</li>
+                          <li>전) 미래아이산부인과 내과 과장</li>
+                          <li>소화기내시경 세부전문의</li>
+                          <li>한국초음파학회 초음파 인증의</li>
                         </ul>
                         <h4 style={{ marginTop: "15px" }}>학회</h4>
                         <ul>
-                          <li>대한 내과학회 평생회원</li>
-                          <li>대한 소화기내시경학회 평생회원</li>
-                          <li>대한 임상초음파학회 평생회원</li>
-                          <li>대한 소화기학회 정회원</li>
-                          <li>대한 고혈압학회 정회원</li>
-                          <li>대한 당뇨병학회 정회원</li>
-                          <li>대한 비만학회 정회원</li>
-                          <li>대한 항노화학회 정회원</li>
-                          <li>대한 소아알레르기호흡기학회 정회원</li>
+                          <li>대한내과학회 평생회원</li>
+                          <li>대한소화기내시경학회 평생회원</li>
+                          <li>대한임상초음파학회 평생회원</li>
+                          <li>한국초음파학회 평생회원</li>
+                          <li>대한소화기학회 정회원</li>
+                          <li>대한고혈압학회 정회원</li>
+                          <li>대한당뇨병학회 정회원</li>
+                          <li>대한산부인과학회 정회원</li>
+                          <li>대한갑상선학회 정회원</li>
+                          <li>대한소아알레르기 호흡기학회 정회원</li>
+                        </ul>
+                        <h4 style={{ marginTop: "15px" }}>논문활동</h4>
+                        <ul>
+                          <li>대한신장학회 논문 우수상</li>
+                          <li>Transforming growth factor-β receptor 2 gene polymorphisms are associated with end-stage renal disease Kidney Res Clin Pract, 2015, vol.34, no.2, pp. 93-97</li>
                         </ul>
                       </div>
                     </div>
