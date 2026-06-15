@@ -42,11 +42,6 @@ export default function Home() {
                 <span className="status-val">정형외과 / 내과</span>
               </div>
               <div className="status-item">
-                <span className="status-label"><i className="fa-solid fa-clock"></i> 오늘 진료시간</span>
-                <span className="status-val">09:00 ~ 18:00</span>
-                <span className="status-sub-val">점심시간 13:00 ~ 14:00</span>
-              </div>
-              <div className="status-item">
                 <span className="status-label"><i className="fa-solid fa-phone"></i> 대표 번호</span>
                 <span className="status-val text-accent">02-2038-4987</span>
               </div>
