@@ -386,7 +386,7 @@ export default function Home() {
                   <span className="blog-author">조형준 원장</span>
                 </div>
                 <div className="blog-card-body">
-                  <h3 className="blog-card-title">Exercise is Medicine (운동이 약이다)</h3>
+                  <h3 className="blog-card-title">Exercise is Medicine<br />(운동이 약이다)</h3>
                   <p className="blog-card-desc">
                     단순 통증 완화를 넘어 우리 몸 고유의 기능을 회복할 수 있는 과학적 운동 방법과 생활 습관 의학 정보를 공유합니다. 올바른 움직임으로 건강을 지키는 든든한 가이드입니다.
                   </p>
