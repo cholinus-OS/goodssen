@@ -418,23 +418,25 @@ export default function Home() {
             <p className="section-desc">환자분들이 헛걸음하지 않도록 진료 시간과 상세 주차 안내를 확인해 주세요.</p>
           </div>
           
-          <div className="location-content-grid">
-            <div className="map-and-info">
-              {/* 구글 맵 실시간 로드 */}
-              <div className="map-placeholder" style={{ border: "none", marginBottom: "15px" }}>
+          {/* 1. 오시는 길 영역 (상단) */}
+          <div className="location-map-grid">
+            {/* 지도 영역 */}
+            <div className="map-wrapper">
+              <div className="map-placeholder">
                 <iframe 
                   src="https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EB%85%B8%EC%9B%90%EA%B5%AC%20%EB%8F%99%EC%9D%BC%EB%A1%9C%201673&t=&z=17&ie=UTF8&iwloc=&output=embed" 
                   width="100%" 
                   height="100%" 
                   frameBorder="0" 
-                  style={{ border: 0, borderRadius: "var(--border-radius-lg)" }} 
+                  style={{ border: 0 }} 
                   allowFullScreen={true}
                   loading="lazy"
                 ></iframe>
               </div>
-              
-              {/* 텍스트 주소 및 카카오맵 외부 링크 */}
-              <div style={{ marginBottom: "25px", padding: "20px", backgroundColor: "var(--color-bg-warm)", borderRadius: "var(--border-radius-lg)", border: "1px solid rgba(10, 77, 104, 0.05)" }}>
+            </div>
+            {/* 주차 및 교통 안내 영역 */}
+            <div className="traffic-info-wrapper">
+              <div style={{ marginBottom: "20px", padding: "20px", backgroundColor: "var(--color-bg-warm)", borderRadius: "var(--border-radius-lg)", border: "1px solid rgba(10, 77, 104, 0.05)" }}>
                 <p style={{ fontWeight: 700, color: "var(--color-primary)", marginBottom: "8px", display: "flex", alignItems: "center", gap: "6px" }}>
                   <i className="fa-solid fa-location-dot"></i> 도로명 주소
                 </p>
@@ -451,11 +453,10 @@ export default function Home() {
                   <i className="fa-solid fa-arrow-up-right-from-square"></i> 카카오맵 길찾기
                 </a>
               </div>
-              
               <div className="traffic-guide">
                 <div className="guide-box">
                   <div className="guide-header">
-                    <span className="guide-icon subway-icon" style={{ backgroundColor: "#3b82f6" }}><i className="fa-solid fa-subway"></i></span>
+                    <span className="guide-icon subway-icon"><i className="fa-solid fa-subway"></i></span>
                     <h4>지하철로 오시는 길</h4>
                   </div>
                   <p className="guide-text" style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>
@@ -465,46 +466,122 @@ export default function Home() {
                 
                 <div className="guide-box">
                   <div className="guide-header">
-                    <span className="guide-icon car-icon" style={{ backgroundColor: "#10b981" }}><i className="fa-solid fa-car"></i></span>
+                    <span className="guide-icon car-icon"><i className="fa-solid fa-car"></i></span>
                     <h4>자가용 및 주차 안내</h4>
                   </div>
-                  <p className="guide-text">
+                  <p className="guide-text" style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>
                     건물 지하 주차장 (B1 ~ B3) <strong>최대 3시간 무료 주차 지원</strong>. 내원 시 원내 안내 데스크에 차량 번호를 말씀해 주시기 바랍니다.
                   </p>
                 </div>
               </div>
             </div>
+          </div>
+          
+          {/* 2. 진료시간 카드 영역 (하단) */}
+          <div className="clinic-time-cards-container">
+            {/* 정형외과 카드 */}
+            <div className="new-time-card ortho-time-card">
+              <div className="new-time-card-header">
+                <div className="header-left">
+                  <span className="header-icon"><i className="fa-solid fa-person-running"></i></span>
+                  <div className="header-text-group">
+                    <span className="header-sub">ORTHOPEDICS</span>
+                    <h3 className="header-main">정형외과</h3>
+                  </div>
+                </div>
+                <div className="header-pulse">
+                  <svg viewBox="0 0 100 30" className="pulse-svg"><path d="M0,15 L30,15 L35,5 L40,25 L45,10 L50,15 L100,15" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2"></path></svg>
+                </div>
+              </div>
+              <div className="new-time-card-body">
+                <div className="time-item">
+                  <div className="time-item-title-row">
+                    <span className="time-day"><i className="fa-regular fa-calendar-days text-primary"></i> 월요일 ~ 금요일</span>
+                    <span className="time-badge badge-blue">평일 진료</span>
+                  </div>
+                  <p className="time-hours">오전 09:00 ~ 오후 06:00</p>
+                  <p className="time-detail"><i className="fa-solid fa-utensils text-muted"></i> 점심시간: 오후 1시 ~ 오후 2시</p>
+                </div>
+                <div className="time-item">
+                  <div className="time-item-title-row">
+                    <span className="time-day"><i className="fa-regular fa-calendar text-primary"></i> 토요일</span>
+                    <span className="time-badge badge-indigo">주말 단축</span>
+                  </div>
+                  <p className="time-hours">오전 09:00 ~ 오후 01:00</p>
+                  <p className="time-detail info-orange"><i className="fa-solid fa-circle-info"></i> 토요일은 점심시간 없이 연속 진료합니다.</p>
+                </div>
+                <div className="time-item closed-item">
+                  <div className="time-item-title-row">
+                    <span className="time-day"><i className="fa-solid fa-circle-exclamation text-danger"></i> 일요일 · 공휴일</span>
+                  </div>
+                  <p className="time-detail text-danger" style={{ margin: 0 }}>휴진 (응급 수술 및 예약 시 별도 문의)</p>
+                </div>
+              </div>
+            </div>
             
-            {/* 진료시간 요약 카드 */}
-            <div className="clinic-time-card">
-              <h3 className="time-card-title"><i className="fa-regular fa-clock"></i> 진료 시간 안내</h3>
-              <div className="time-list">
-                <div className="time-row">
-                  <span className="day">평 일 (월 ~ 금)</span>
-                  <span className="hours">오전 09:00 - 오후 18:00</span>
+            {/* 내과 카드 */}
+            <div className="new-time-card internal-time-card">
+              <div className="new-time-card-header">
+                <div className="header-left">
+                  <span className="header-icon"><i className="fa-solid fa-stethoscope"></i></span>
+                  <div className="header-text-group">
+                    <span className="header-sub">INTERNAL MEDICINE</span>
+                    <h3 className="header-main">내과</h3>
+                  </div>
                 </div>
-                <div className="time-row">
-                  <span className="day">점심 시간</span>
-                  <span className="hours">오후 13:00 - 오후 14:00</span>
-                </div>
-                <div className="time-row">
-                  <span className="day">토 요 일</span>
-                  <span className="hours">오전 09:00 - 오후 13:00</span>
-                </div>
-                <div className="time-row closed">
-                  <span className="day">일요일 · 공휴일</span>
-                  <span className="hours">휴진</span>
+                <div className="header-pulse">
+                  <svg viewBox="0 0 100 30" className="pulse-svg"><path d="M0,15 L30,15 L35,5 L40,25 L45,10 L50,15 L100,15" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2"></path></svg>
                 </div>
               </div>
-              <div className="time-callout">
-                <p><i className="fa-solid fa-triangle-exclamation"></i> <strong>알려드립니다:</strong></p>
-                <p>정형외과 및 내과 접수 마감은 진료 종료 30분 전까지입니다. 내시경 검사는 사전에 전화 예약이 필요합니다.</p>
+              <div className="new-time-card-body">
+                <div className="time-item">
+                  <div className="time-item-title-row">
+                    <span className="time-day"><i className="fa-regular fa-calendar-days text-success"></i> 월요일 · 화요일</span>
+                  </div>
+                  <p className="time-hours">오전 09:00 ~ 오후 06:00</p>
+                  <p className="time-detail"><i className="fa-solid fa-utensils text-muted"></i> 점심시간: 13:00 ~ 14:00</p>
+                </div>
+                <div className="time-item closed-item-pink">
+                  <div className="time-item-title-row">
+                    <span className="time-day"><i className="fa-regular fa-calendar-minus text-danger"></i> 수요일</span>
+                    <span className="time-badge badge-pink">정기 휴진</span>
+                  </div>
+                  <p className="time-detail text-danger" style={{ margin: 0 }}>수요일은 전일 휴진입니다.</p>
+                </div>
+                <div className="time-item">
+                  <div className="time-item-title-row">
+                    <span className="time-day"><i className="fa-regular fa-clock text-success"></i> 목요일</span>
+                    <span className="time-badge badge-orange">오후 단축</span>
+                  </div>
+                  <p className="time-hours">오전 09:00 ~ 오후 04:20</p>
+                  <p className="time-detail"><i className="fa-solid fa-utensils text-muted"></i> 점심시간: 13:00 ~ 14:00</p>
+                </div>
+                <div className="time-item">
+                  <div className="time-item-title-row">
+                    <span className="time-day"><i className="fa-regular fa-clock text-success"></i> 금요일</span>
+                    <span className="time-badge badge-orange">오후 단축</span>
+                  </div>
+                  <p className="time-hours">오전 09:00 ~ 오후 04:30</p>
+                  <p className="time-detail"><i className="fa-solid fa-utensils text-muted"></i> 점심시간: 13:00 ~ 14:00</p>
+                </div>
+                <div className="time-item">
+                  <div className="time-item-title-row">
+                    <span className="time-day"><i className="fa-regular fa-calendar text-success"></i> 토요일</span>
+                  </div>
+                  <p className="time-hours">오전 09:00 ~ 오후 01:00</p>
+                  <p className="time-detail info-green"><i className="fa-solid fa-circle-info"></i> 토요일은 점심시간 없이 연속 진료합니다.</p>
+                </div>
               </div>
-              <div className="time-btn-wrapper">
-                <a href="tel:02-2038-4987" className="btn-tel">
-                  <i className="fa-solid fa-phone"></i> 대표전화 연결: 02-2038-4987
-                </a>
-              </div>
+            </div>
+          </div>
+          
+          {/* 하단 안내 및 전화버튼 영역 */}
+          <div className="clinic-time-cta">
+            <p className="cta-notice"><i className="fa-solid fa-triangle-exclamation"></i> <strong>알려드립니다:</strong> 정형외과 및 내과 접수 마감은 진료 종료 30분 전까지입니다. 내시경 검사는 사전에 전화 예약이 필요합니다.</p>
+            <div className="time-btn-wrapper" style={{ maxWidth: "450px", margin: "0 auto" }}>
+              <a href="tel:02-2038-4987" className="btn-tel">
+                <i className="fa-solid fa-phone"></i> 대표전화 연결: 02-2038-4987
+              </a>
             </div>
           </div>
         </div>

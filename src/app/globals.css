@@ -872,24 +872,38 @@ button {
     background-color: #ffffff;
 }
 
-.location-content-grid {
+.location-map-grid {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
     gap: 40px;
+    margin-bottom: 45px;
 }
 
 /* 지도 영역 */
 .map-placeholder {
     width: 100%;
-    height: 320px;
+    height: 350px;
     background-color: var(--color-primary-light);
     border-radius: var(--border-radius-lg);
     position: relative;
     overflow: hidden;
-    border: 1px dashed var(--color-primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: 1px solid rgba(10, 77, 104, 0.1);
+}
+
+.btn-map-link {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-map-link:hover {
+    background-color: var(--color-primary-dark);
 }
 
 /* 대중교통 및 주차 안내 */
@@ -897,20 +911,20 @@ button {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-top: 30px;
 }
 
 .guide-box {
     background-color: var(--color-bg-warm);
     border-radius: var(--border-radius-lg);
-    padding: 25px;
+    padding: 20px;
+    border: 1px solid rgba(10, 77, 104, 0.03);
 }
 
 .guide-header {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .guide-icon {
@@ -929,6 +943,7 @@ button {
 .guide-header h4 {
     font-size: 1.1rem;
     font-weight: 700;
+    color: var(--color-primary);
 }
 
 .guide-text {
@@ -936,62 +951,206 @@ button {
     color: var(--color-text-muted);
 }
 
-/* 진료 시간안내 카드 */
-.clinic-time-card {
-    background-color: var(--color-primary);
-    color: #ffffff;
-    border-radius: var(--border-radius-lg);
-    padding: 40px;
-    box-shadow: var(--box-shadow-premium);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/* 진료시간 카드 컨테이너 */
+.clinic-time-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
 }
 
-.time-card-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 25px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    padding-bottom: 15px;
+/* 개별 진료시간 카드 */
+.new-time-card {
+    background-color: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(10, 77, 104, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-time-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 30px;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.ortho-time-card .new-time-card-header {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.internal-time-card .new-time-card-header {
+    background: linear-gradient(135deg, #10b981, #047857);
+}
+
+.new-time-card-header .header-left {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    position: relative;
+    z-index: 2;
 }
 
-.time-list {
+.new-time-card-header .header-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+}
+
+.new-time-card-header .header-text-group {
     display: flex;
     flex-direction: column;
-    gap: 15px;
 }
 
-.time-row {
+.new-time-card-header .header-sub {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    opacity: 0.8;
+}
+
+.new-time-card-header .header-main {
+    font-size: 1.45rem;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.new-time-card-header .header-pulse {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.pulse-svg {
+    width: 100%;
+    height: auto;
+}
+
+.new-time-card-body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-grow: 1;
+}
+
+.time-item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.time-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.time-item-title-row {
     display: flex;
     justify-content: space-between;
-    font-size: 0.95rem;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    align-items: center;
+    margin-bottom: 8px;
 }
 
-.time-row:last-child {
+.time-day {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.time-day i {
+    font-size: 1rem;
+}
+
+.time-day i.text-primary { color: #3b82f6; }
+.time-day i.text-success { color: #10b981; }
+
+.time-badge {
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.badge-blue { background-color: #e0f2fe; color: #0369a1; }
+.badge-indigo { background-color: #e0e7ff; color: #4338ca; }
+.badge-pink { background-color: #ffe4e6; color: #be123c; }
+.badge-orange { background-color: #ffedd5; color: #c2410c; }
+
+.time-hours {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 6px 0;
+    letter-spacing: -0.5px;
+}
+
+.time-detail {
+    font-size: 0.88rem;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 2px 0 0 0;
+}
+
+.time-detail i {
+    font-size: 0.85rem;
+}
+
+.time-detail.info-orange {
+    color: #d97706;
+}
+
+.time-detail.info-green {
+    color: #059669;
+}
+
+.closed-item {
+    background-color: #fef2f2;
+    border-radius: 12px;
+    padding: 15px 20px;
     border-bottom: none;
 }
 
-.time-row.closed {
-    color: var(--color-accent);
+.closed-item-pink {
+    background-color: #fdf2f8;
+    border-radius: 12px;
+    padding: 15px 20px;
+    border-bottom: none;
 }
 
-.time-row .day {
-    font-weight: 600;
+.clinic-time-cta {
+    margin-top: 30px;
+    text-align: center;
 }
 
-.time-callout {
-    background-color: rgba(255, 255, 255, 0.06);
-    border-radius: var(--border-radius-sm);
-    padding: 15px;
-    margin: 25px 0;
-    font-size: 0.85rem;
-    border-left: 3px solid var(--color-accent);
+.cta-notice {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .time-btn-wrapper {
@@ -1008,6 +1167,19 @@ button {
     font-size: 1.05rem;
     font-weight: 700;
     box-shadow: 0 4px 15px rgba(217, 119, 6, 0.3);
+    text-decoration: none;
+}
+
+/* 반응형 스타일 조정 */
+@media (max-width: 992px) {
+    .location-map-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .clinic-time-cards-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* 11. 푸터 영역 */
