@@ -22,7 +22,7 @@ export default function Home() {
             <span className="hero-badge">정형외과·내과 전문의 3인 다학제 협진</span>
             <h1 className="hero-title">
               유쾌한 진료, 상쾌한 회복, 명쾌한 설명.<br />
-              <span className="text-highlight">굳쎈정형외과내과의원</span>이<br />
+              <span className="text-highlight">굳쎈 정형외과 의원</span>이<br />
               건강한 일상을 지킵니다.
             </h1>
             <p className="hero-subtitle">
