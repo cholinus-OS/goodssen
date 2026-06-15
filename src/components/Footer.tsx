@@ -24,7 +24,6 @@ export default function Footer() {
             <h4>연락 및 예약</h4>
             <p><strong>대표전화:</strong> 02-2038-4987</p>
             <p><strong>팩스번호:</strong> 02-2038-4988</p>
-            <p><strong>이메일:</strong> contact@goodssen.com</p>
           </div>
         </div>
       </div>
