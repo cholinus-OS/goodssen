@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="footer-top">
         <div className="footer-container">
           <div className="footer-info-brand">
-            <h3>굳쎈정형외과내과의원</h3>
+            <h3>굳쎈 정형외과 의원</h3>
             <p>정형외과 전문의 2인 & 내과 전문의 1인 협진 시스템으로 환자의 관절과 만성 질환을 빈틈없이 관리합니다.</p>
           </div>
           
@@ -30,9 +30,9 @@ export default function Footer() {
       
       <div className="footer-bottom">
         <div className="footer-container">
-          <p className="copyright">© 2026 굳쎈정형외과내과의원. All Rights Reserved. Designed for premium care.</p>
+          <p className="copyright">© 2026 굳쎈 정형외과 의원. All Rights Reserved. Designed for premium care.</p>
           <div className="footer-address">
-            상호명: 굳쎈정형외과내과의원 | 대표자: 정기웅 | 주소: 서울 노원구 동일로 1673 (신한은행 건물 4층) | 사업자등록번호: 210-91-58276
+            상호명: 굳쎈 정형외과 의원 | 대표자: 정기웅 | 주소: 서울 노원구 동일로 1673 (신한은행 건물 4층) | 사업자등록번호: 210-91-58276
           </div>
         </div>
       </div>

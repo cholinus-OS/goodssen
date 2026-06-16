@@ -197,7 +197,7 @@ export default function NoticePage() {
             굳쎈 정형외과 내과의 공지사항
           </h1>
           <p style={{ opacity: 0.8, fontSize: "1.05rem", margin: 0 }}>
-            굳쎈정형외과내과의원의 중요 공지 및 규정을 투명하게 안내해 드립니다.
+            굳쎈 정형외과 의원의 중요 공지 및 규정을 투명하게 안내해 드립니다.
           </p>
         </div>
       </section>
@@ -302,7 +302,7 @@ export default function NoticePage() {
                   </h2>
                   <div style={{ color: "hsl(210, 24%, 30%)", lineHeight: "1.8", fontSize: "0.95rem" }}>
                     <p style={{ marginBottom: "15px" }}>
-                      <strong>굳쎈정형외과내과의원</strong>(이하 "본원")은 환자 및 고객님의 개인정보를 매우 소중하게 생각하며, "개인정보 보호법" 및 "의료법" 등 관련 법령을 철저히 준수하고 있습니다. 본원은 개인정보 처리방침을 통하여 환자분들께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보 보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.
+                      <strong>굳쎈 정형외과 의원</strong>(이하 "본원")은 환자 및 고객님의 개인정보를 매우 소중하게 생각하며, "개인정보 보호법" 및 "의료법" 등 관련 법령을 철저히 준수하고 있습니다. 본원은 개인정보 처리방침을 통하여 환자분들께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보 보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.
                     </p>
                     
                     <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "hsl(210, 24%, 16%)", marginTop: "30px", marginBottom: "10px" }}>
@@ -357,7 +357,7 @@ export default function NoticePage() {
                       제 1 조 (목적)
                     </h3>
                     <p style={{ marginBottom: "15px" }}>
-                      본 약관은 굳쎈정형외과내과의원(이하 "본원")이 제공하는 인터넷 관련 서비스(이하 "서비스")를 이용함에 있어, 이용자의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.
+                      본 약관은 굳쎈 정형외과 의원(이하 "본원")이 제공하는 인터넷 관련 서비스(이하 "서비스")를 이용함에 있어, 이용자의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.
                     </p>
 
                     <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "hsl(210, 24%, 16%)", marginTop: "20px", marginBottom: "10px" }}>
@@ -410,7 +410,7 @@ export default function NoticePage() {
                       "본 웹사이트에 게시된 이메일 주소의 무단 수집을 거부합니다."
                     </p>
                     <p style={{ marginBottom: "15px" }}>
-                      굳쎈정형외과내과의원 홈페이지에 게시된 이메일 주소가 전자우편 수집 프로그램이나 그 밖의 기술적 장치를 이용하여 무단으로 수집되는 것을 거부하며, 이를 위반할 경우 <strong>정보통신망 이용촉진 및 정보보호 등에 관한 법률</strong>에 의해 형사처벌을 받을 수 있음을 알려드립니다.
+                      굳쎈 정형외과 의원 홈페이지에 게시된 이메일 주소가 전자우편 수집 프로그램이나 그 밖의 기술적 장치를 이용하여 무단으로 수집되는 것을 거부하며, 이를 위반할 경우 <strong>정보통신망 이용촉진 및 정보보호 등에 관한 법률</strong>에 의해 형사처벌을 받을 수 있음을 알려드립니다.
                     </p>
                     
                     <div style={{ backgroundColor: "#f1f5f9", padding: "20px", borderRadius: "8px", borderLeft: "4px solid hsl(38, 92%, 50%)", marginTop: "30px", marginBottom: "30px" }}>
@@ -437,7 +437,7 @@ export default function NoticePage() {
                   </h2>
                   <div style={{ color: "hsl(210, 24%, 30%)", lineHeight: "1.8", fontSize: "0.95rem" }}>
                     <p style={{ marginBottom: "20px" }}>
-                      비급여 진료비는 국민건강보험법에 따라 건강보험이 적용되지 않아, 환자가 비용 전액을 부담하는 항목입니다. 의료법 제45조에 의거하여 굳쎈정형외과내과의원에서 시행하는 비급여 진료비용을 아래와 같이 투명하게 고지합니다.
+                      비급여 진료비는 국민건강보험법에 따라 건강보험이 적용되지 않아, 환자가 비용 전액을 부담하는 항목입니다. 의료법 제45조에 의거하여 굳쎈 정형외과 의원에서 시행하는 비급여 진료비용을 아래와 같이 투명하게 고지합니다.
                     </p>
 
                     <div style={{ overflowX: "auto" }}>
