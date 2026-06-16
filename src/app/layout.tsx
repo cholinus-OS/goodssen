@@ -3,9 +3,21 @@ import "./globals.css";
 
 // 굳쎈정형외과내과의원 메타 데이터 정의 (SEO 최적화)
 export const metadata: Metadata = {
+  metadataBase: new URL("https://goodssen.kr"),
   title: "굳쎈정형외과내과의원 - 든든하고 정확한 협진 진료",
   description: "정형외과 전문의 2인, 내과 전문의 1인 협진 시스템. 척추관절 비수술 통증치료 및 위·대장내시경, 5대 암검진, 공단검진 전문 굳쎈정형외과내과입니다.",
   keywords: ["굳쎈정형외과내과", "정형외과", "내과", "도수치료", "체외충격파", "위내시경", "대장내시경", "5대암검진"],
+  alternates: {
+    canonical: "https://goodssen.kr",
+  },
+  openGraph: {
+    title: "굳쎈정형외과내과의원 - 든든하고 정확한 협진 진료",
+    description: "정형외과 전문의 2인, 내과 전문의 1인 협진 시스템. 척추관절 비수술 통증치료 및 위·대장내시경, 5대 암검진, 공단검진 전문 굳쎈정형외과내과입니다.",
+    url: "https://goodssen.kr",
+    siteName: "굳쎈정형외과내과의원",
+    locale: "ko_KR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
