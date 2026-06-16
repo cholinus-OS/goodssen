@@ -4,6 +4,124 @@ import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+// PDF 파일로부터 추출한 비급여 품목 목록 데이터
+const nonPayItems = [
+  // 처치재료 (시행일: 2025.07.01)
+  { category: "처치재료", name: "석고 신발(cast shoes) 칼라", price: "8,000 ~ 12,000", remark: "" },
+  { category: "처치재료", name: "목발 1쌍", price: "25,000", remark: "" },
+  { category: "처치재료", name: "팔걸이(arm sling)", price: "5,000", remark: "" },
+  { category: "처치재료", name: "8자 붕대", price: "10,000", remark: "" },
+  { category: "처치재료", name: "벨포", price: "20,000 ~ 35,000", remark: "종류별" },
+  { category: "처치재료", name: "바이오 프리젤", price: "20,000", remark: "" },
+  { category: "처치재료", name: "밥스카 케어", price: "50,000", remark: "" },
+  { category: "처치재료", name: "복대", price: "10,000", remark: "" },
+  { category: "처치재료", name: "Dressing KIT (소독1회용키트)", price: "2,000", remark: "" },
+  { category: "처치재료", name: "cool band", price: "15,000", remark: "" },
+
+  // 수술재료 (시행일: 2025.07.01)
+  { category: "수술재료", name: "유착 방지제(하이배리)", price: "500,000", remark: "" },
+  { category: "수술재료", name: "타우로린", price: "150,000", remark: "" },
+  { category: "수술재료", name: "창상피복제(스토피 헤모스태틱 )", price: "350,000", remark: "" },
+  { category: "수술재료", name: "하이랙스", price: "200,000", remark: "" },
+  { category: "수술재료", name: "큐어젠 (생체조직재생)", price: "100,000 ~ 300,000", remark: "용량별" },
+  { category: "수술재료", name: "플로실 헤모스태틱 매트릭스", price: "1,800,000", remark: "" },
+  { category: "수술재료", name: "PCA/PCA 리필", price: "50,000 ~ 120,000", remark: "실사용" },
+  { category: "수술재료", name: "리포라제", price: "70,000", remark: "" },
+  { category: "수술재료", name: "DBM", price: "800,000", remark: "" },
+  { category: "수술재료", name: "멸균스타킹 (MARLINS, POVIS STN)", price: "28,000", remark: "" },
+  { category: "수술재료", name: "부종 압박 밴드", price: "130,000", remark: "" },
+  { category: "수술재료", name: "부직밴드, 픽스롤", price: "200 ~", remark: "실사용" },
+  { category: "수술재료", name: "ICE BAG", price: "15,000", remark: "" },
+
+  // 처치행위 (시행일: 2025.07.01)
+  { category: "처치행위", name: "증식치료(Prolotherapy)", price: "30,000 ~ 200,000", remark: "부위별" },
+  { category: "처치행위", name: "도수.감압치료(Manual therapy)", price: "50,000 ~ 150,000", remark: "부위별" },
+  { category: "처치행위", name: "ESWT(체외충격파)", price: "30,000 ~ 150,000", remark: "부위별" },
+  { category: "처치행위", name: "신경성형술", price: "1,000,000", remark: "1 level" },
+  { category: "처치행위", name: "Navi cather", price: "660,000", remark: "신경성형술재료대" },
+
+  // 서류비 (시행일: 2021.04.01)
+  { category: "서류비", name: "진단서", price: "20,000", remark: "" },
+  { category: "서류비", name: "영문 진단서", price: "20,000", remark: "" },
+  { category: "서류비", name: "영문 처방전", price: "무료", remark: "" },
+  { category: "서류비", name: "건강 진단서", price: "20,000", remark: "" },
+  { category: "서류비", name: "근로능력평가용 진단서", price: "10,000", remark: "" },
+  { category: "서류비", name: "진단서 및 재증명 재발행", price: "1,000", remark: "추가 장당" },
+  { category: "서류비", name: "입.퇴원서", price: "3,000", remark: "" },
+  { category: "서류비", name: "통원(진료) 확인서", price: "3,000", remark: "" },
+  { category: "서류비", name: "수술 확인서", price: "10,000", remark: "" },
+  { category: "서류비", name: "소견서(진단내용)", price: "10,000", remark: "보험사제출" },
+  { category: "서류비", name: "후유장해 진단서", price: "100,000", remark: "" },
+  { category: "서류비", name: "후유장해 진단 재발행", price: "10,000", remark: "" },
+  { category: "서류비", name: "장애진단서(신체적)", price: "15,000", remark: "" },
+  { category: "서류비", name: "상해 진단서( 3주이하)", price: "100,000", remark: "" },
+  { category: "서류비", name: "상해 진단서( 3주이상)", price: "150,000", remark: "" },
+  { category: "서류비", name: "상해진단서 재발행", price: "10,000", remark: "" },
+  { category: "서류비", name: "병사용(병무용)진단서", price: "20,000", remark: "" },
+  { category: "서류비", name: "채용신체검사서 (공무원)", price: "40,000", remark: "" },
+  { category: "서류비", name: "채용신체검사서(일반)", price: "30,000", remark: "" },
+  { category: "서류비", name: "향후 치료비 추정서(천만원미만)", price: "50,000", remark: "" },
+  { category: "서류비", name: "향후 치료비 추정서( 천만원이상)", price: "100,000", remark: "" },
+  { category: "서류비", name: "진료기록사본 (1~5매)", price: "장당 1,000", remark: "초진챠트" },
+  { category: "서류비", name: "진료기록사본 (6매 이상)", price: "장당 100", remark: "" },
+  { category: "서류비", name: "세부내역서(최초1회무료)", price: "1,000", remark: "추가당" },
+  { category: "서류비", name: "CD copy 및 USB copy", price: "10,000", remark: "" },
+
+  // 초음파 (시행일: 2025.07.01)
+  { category: "초음파", name: "초음파 A -상.하지(Extremity)", price: "30,000~50,000", remark: "정밀 관찰여부" },
+  { category: "초음파", name: "초음파 B-관절 (Joint)", price: "50,000", remark: "" },
+  { category: "초음파", name: "초음파(기타), Spine", price: "10,000~100,000", remark: "기타 부위별/ Spine" },
+  { category: "초음파", name: "단순 초음파", price: "10,000", remark: "" },
+  { category: "초음파", name: "복부 초음파", price: "100,000", remark: "" },
+  { category: "초음파", name: "갑상선 초음파", price: "60,000", remark: "26.5/18 -갑초,경초 바뀜" },
+  { category: "초음파", name: "경동맥 초음파", price: "80,000", remark: "" },
+
+  // 검사 (시행일: 2025.07.01)
+  { category: "검사", name: "골다공증 검사", price: "50,000", remark: "" },
+  { category: "검사", name: "성장판 검사", price: "70,000~100,000", remark: "" },
+  { category: "검사", name: "비타민 D 검사", price: "13,000", remark: "" },
+  { category: "검사", name: "독감 A.B항원", price: "20,000", remark: "" },
+  { category: "검사", name: "코로나 항원(독감동시)", price: "35,000", remark: "" },
+  { category: "검사", name: "수면마취비 (위)", price: "50,000", remark: "" },
+  { category: "검사", name: "수면마취비(대장)", price: "80,000", remark: "위.대장 동시 10만" },
+
+  // 주사제 (시행일: 2025.07.01)
+  { category: "주사제", name: "태반주사- 라이넥", price: "10,000", remark: "" },
+  { category: "주사제", name: "영양제", price: "30,000~150,000", remark: "용량별" },
+  { category: "주사제", name: "비타민D3 비타벨라", price: "50,000", remark: "" },
+  { category: "주사제", name: "조직 재생 주사", price: "100,000 ~", remark: "부위,사용별" },
+  { category: "주사제", name: "통증 완화주사(아큐판,아세타펜등)", price: "5,000 ~ 50,000", remark: "종류, 용량별" },
+
+  // 예방접종 (시행일: 2025.07.01)
+  { category: "예방접종", name: "B형 간염주사", price: "25,000", remark: "유박스비,헤파뮨" },
+  { category: "예방접종", name: "A형 간염주사", price: "80,000", remark: "하브릭스,아박심" },
+  { category: "예방접종", name: "폐렴- 프리베나 13가", price: "130,000", remark: "" },
+  { category: "예방접종", name: "폐렴 -프로디악스 23가", price: "50,000", remark: "" },
+  { category: "예방접종", name: "독감 치료주사(페라미,페라원스)", price: "100,000~140,000", remark: "종류, 용량별" },
+  { category: "예방접종", name: "티디(파상풍,디프테리아)백신", price: "35,000", remark: "" },
+  { category: "예방접종", name: "대상포진주사(종류별)", price: "170,000~250,000", remark: "조스타,싱그릭스" },
+  { category: "예방접종", name: "독감주사 3가", price: "35,000 ~", remark: "4가시 추후변동있음" },
+
+  // 보조기 (시행일: 2025.07.01)
+  { category: "보조기", name: "목보호대( Soft collar)", price: "15,000", remark: "" },
+  { category: "보조기", name: "목보호대(필라델피아)", price: "30,000", remark: "" },
+  { category: "보조기", name: "발목 보호대(ankle brace)", price: "25,000", remark: "" },
+  { category: "보조기", name: "무릎 보호대(knee brace)", price: "70,000", remark: "" },
+  { category: "보조기", name: "손목 보호대(wrist brace)", price: "15,000", remark: "" },
+  { category: "보조기", name: "손가락 보호대(thumb brace)", price: "26,000", remark: "" },
+  { category: "보조기", name: "허리 보호대( back brace)", price: "30,000~200,000", remark: "종류별" },
+
+  // 병실료/식대 (시행일: 2025.07.01)
+  { category: "병실료/식대", name: "1인실", price: "70,000", remark: "" },
+  { category: "병실료/식대", name: "보호자 식사", price: "6,000", remark: "" },
+  { category: "병실료/식대", name: "공기밥 추가", price: "1,000", remark: "" },
+
+  // 기타 (시행일: 2025.07.01)
+  { category: "기타", name: "소변기", price: "5,000", remark: "" },
+  { category: "기타", name: "환의- 상,하", price: "30,000", remark: "반납시 환불" },
+  { category: "기타", name: "장정결제(오라팡,원프랩)", price: "40,000", remark: "" }
+];
+
 export default function NoticePage() {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -326,108 +444,47 @@ export default function NoticePage() {
                       <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.92rem", minWidth: "600px" }}>
                         <thead>
                           <tr style={{ backgroundColor: "hsl(193, 80%, 25%)", color: "#ffffff" }}>
-                            <th style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "left" }}>대분류</th>
-                            <th style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "left" }}>항목 (세부 명칭)</th>
-                            <th style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "center" }}>단위</th>
-                            <th style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "right" }}>금액 (원)</th>
-                            <th style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "left" }}>설명/비고</th>
+                            <th style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "left", width: "18%" }}>구분</th>
+                            <th style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "left", width: "45%" }}>품목명</th>
+                            <th style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "right", width: "17%" }}>금액 (원)</th>
+                            <th style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "left", width: "20%" }}>비고</th>
                           </tr>
                         </thead>
                         <tbody>
-                          {/* 도수 및 물리치료 */}
-                          <tr style={{ backgroundColor: "#f8fafc" }}>
-                            <td rowSpan={3} style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontWeight: 700, verticalAlign: "middle" }}>도수치료/충격파</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1" }}>도수치료 (기본 코스)</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "center" }}>40분</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "right", fontWeight: "bold" }}>120,000</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontSize: "0.85rem" }}>도수 및 물리치료 병행</td>
-                          </tr>
-                          <tr style={{ backgroundColor: "#f8fafc" }}>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1" }}>도수치료 (집중 케어)</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "center" }}>60분</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "right", fontWeight: "bold" }}>170,000</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontSize: "0.85rem" }}>도수, 척추 교정 및 운동 치료 포함</td>
-                          </tr>
-                          <tr style={{ backgroundColor: "#f8fafc" }}>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1" }}>체외충격파 (ESWT)</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "center" }}>1회</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "right", fontWeight: "bold" }}>80,000</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontSize: "0.85rem" }}>근막통증증후군 및 관절 건염 특화</td>
-                          </tr>
-                          {/* 주사치료 */}
-                          <tr>
-                            <td rowSpan={2} style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontWeight: 700, verticalAlign: "middle" }}>척추관절 주사</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1" }}>프롤로 주사 (인대강화주사)</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "center" }}>1회</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "right", fontWeight: "bold" }}>100,000</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontSize: "0.85rem" }}>고농도 포도당 인대 증식 치료</td>
-                          </tr>
-                          <tr>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1" }}>DNA 재생주사 (PDRN)</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "center" }}>1회</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "right", fontWeight: "bold" }}>150,000</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontSize: "0.85rem" }}>세포 재생 및 염증 완화 촉진 주사</td>
-                          </tr>
-                          {/* 내과/내시경 */}
-                          <tr style={{ backgroundColor: "#f8fafc" }}>
-                            <td rowSpan={3} style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontWeight: 700, verticalAlign: "middle" }}>소화기 내시경</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1" }}>위내시경 (수면 진정 관리료)</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "center" }}>1회</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "right", fontWeight: "bold" }}>60,000</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontSize: "0.85rem" }}>검사비, 진찰료 별도 구분 고지</td>
-                          </tr>
-                          <tr style={{ backgroundColor: "#f8fafc" }}>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1" }}>대장내시경 (수면 진정 관리료)</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "center" }}>1회</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "right", fontWeight: "bold" }}>80,000</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontSize: "0.85rem" }}>진정 유도제 투여 및 모니터링 포함</td>
-                          </tr>
-                          <tr style={{ backgroundColor: "#f8fafc" }}>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1" }}>대장 용종절제술 (비급여 기구)</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1" }}>1회</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "right", fontWeight: "bold" }}>100,000 ~ 200,000</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontSize: "0.85rem" }}>용종의 개수 및 절제 범위에 따라 차등 적용</td>
-                          </tr>
-                          {/* 예방접종 */}
-                          <tr>
-                            <td rowSpan={3} style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontWeight: 700, verticalAlign: "middle" }}>예방접종 백신</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1" }}>대상포진 백신 (싱그릭스)</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "center" }}>1회</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "right", fontWeight: "bold" }}>250,000</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontSize: "0.85rem" }}>유전자 재조합 백신 (총 2회 접종 필요)</td>
-                          </tr>
-                          <tr>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1" }}>폐렴구균 백신 (프리베나 13)</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "center" }}>1회</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "right", fontWeight: "bold" }}>130,000</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontSize: "0.85rem" }}>성인 평생 1회 접종 권장</td>
-                          </tr>
-                          <tr>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1" }}>독감 인플루엔자 (4가)</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "center" }}>1회</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "right", fontWeight: "bold" }}>40,000</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontSize: "0.85rem" }}>시즌별 변동 가능</td>
-                          </tr>
-                          {/* 영양수액 */}
-                          <tr style={{ backgroundColor: "#f8fafc" }}>
-                            <td rowSpan={2} style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontWeight: 700, verticalAlign: "middle" }}>영양 수액</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1" }}>아미노산 및 종합비타민 수액</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "center" }}>1회</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "right", fontWeight: "bold" }}>80,000</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontSize: "0.85rem" }}>만성 피로 및 기력 저하 회복용 수액</td>
-                          </tr>
-                          <tr style={{ backgroundColor: "#f8fafc" }}>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1" }}>항산화 마늘 주사 (비타민B1)</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "center" }}>1회</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "right", fontWeight: "bold" }}>40,000</td>
-                            <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontSize: "0.85rem" }}>빠른 피로 및 젖산 해소 효능</td>
-                          </tr>
+                          {nonPayItems.map((item, index) => {
+                            const firstIndex = nonPayItems.findIndex(x => x.category === item.category);
+                            const isFirstOfCategory = index === firstIndex;
+                            const categoryCount = nonPayItems.filter(x => x.category === item.category).length;
+
+                            return (
+                              <tr key={index} style={{ backgroundColor: index % 2 === 0 ? "#ffffff" : "#f8fafc" }}>
+                                {isFirstOfCategory && (
+                                  <td 
+                                    rowSpan={categoryCount} 
+                                    style={{ 
+                                      padding: "12px 15px", 
+                                      border: "1px solid #cbd5e1", 
+                                      fontWeight: 700, 
+                                      verticalAlign: "middle",
+                                      backgroundColor: "#f8fafc",
+                                      color: "hsl(193, 80%, 20%)"
+                                    }}
+                                  >
+                                    {item.category}
+                                  </td>
+                                )}
+                                <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", color: "#1e293b" }}>{item.name}</td>
+                                <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", textAlign: "right", fontWeight: "700", color: "#0f172a" }}>{item.price}</td>
+                                <td style={{ padding: "12px 15px", border: "1px solid #cbd5e1", fontSize: "0.85rem", color: "#64748b" }}>{item.remark}</td>
+                              </tr>
+                            );
+                          })}
                         </tbody>
                       </table>
                     </div>
                     
                     <p style={{ marginTop: "20px", fontSize: "0.85rem", color: "#64748b" }}>
-                      ※ 상기 비급여 항목은 약제 가격 변동 및 환자 상태에 따른 진료량 변화에 따라 가감될 수 있으며, 치료 전 의료진의 상세한 안내 후 시행됩니다. (고지일자: 2026년 6월 1일)
+                      ※ 상기 비급여 항목은 약제 가격 변동 및 환자 상태에 따른 진료량 변화에 따라 가감될 수 있으며, 치료 전 의료진의 상세한 안내 후 시행됩니다. (최종 개정일자: 2025년 7월 1일 기준)
                     </p>
                   </div>
                 </div>
