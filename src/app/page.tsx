@@ -481,7 +481,7 @@ export default function Home() {
                   <span className="header-icon"><i className="fa-solid fa-person-running"></i></span>
                   <div className="header-text-group">
                     <span className="header-sub">ORTHOPEDICS</span>
-                    <h3 className="header-main">정형외과</h3>
+                    <h3 className="header-main">정형외과 <span style={{ fontSize: "1.1rem", fontWeight: 500, opacity: 0.9, marginLeft: "8px" }}>(4층)</span></h3>
                   </div>
                 </div>
                 <div className="header-pulse">
@@ -521,7 +521,7 @@ export default function Home() {
                   <span className="header-icon"><i className="fa-solid fa-stethoscope"></i></span>
                   <div className="header-text-group">
                     <span className="header-sub">INTERNAL MEDICINE</span>
-                    <h3 className="header-main">내과</h3>
+                    <h3 className="header-main">내과 <span style={{ fontSize: "1.1rem", fontWeight: 500, opacity: 0.9, marginLeft: "8px" }}>(3층)</span></h3>
                   </div>
                 </div>
                 <div className="header-pulse">
