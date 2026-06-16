@@ -28,6 +28,9 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
+        {/* 네이버 웹마스터 도구 소유자 확인 코드 */}
+        <meta name="naver-site-verification" content="79ebacb1ee0bacff4fe20279d9cdeddf817ca409" />
+
         {/* 구글 웹폰트 및 아이콘 CDN 링크 로드 */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
