@@ -530,7 +530,7 @@ export default function JointCenterPage() {
                       <div className="card-icon-wrapper" style={{ color: "hsl(193, 80%, 25%)", fontSize: "2rem", marginBottom: "15px" }}>
                         <i className="fa-solid fa-radiation"></i>
                       </div>
-                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>신경차단술 및 FIMS 통증 치료</h3>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "12px", color: "hsl(210, 24%, 16%)" }}>신경차단술 및 통증 치료</h3>
                       <p style={{ color: "hsl(208, 12%, 46%)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
                         실시간 컴퓨터 촬영 장비를 활용해 부종과 유착이 심해진 신경가지 부근에 염증을 강력 가라앉히는 치료제를 정밀 주입합니다.
                       </p>
